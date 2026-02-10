@@ -434,6 +434,24 @@
       .merge(selection)
       .attr("d", cloudPath);
     selection.exit().remove();
+
+    const textSelection = areasLayer.selectAll("text.area-label").data(model.areas, (d) => d.id);
+    textSelection
+      .enter()
+      .append("text")
+      .attr("class", "area-label")
+      .attr("text-anchor", "middle")
+      .attr("dominant-baseline", "middle")
+      .attr("fill", "#1f2d1f")
+      .attr("font-size", 13)
+      .attr("font-weight", 600)
+      .attr("pointer-events", "none")
+      .merge(textSelection)
+      .attr("x", (d) => d.x)
+      .attr("y", (d) => d.y)
+      .text((d) => d.name);
+    textSelection.exit().remove();
+
     renderAreaHandles();
   }
 
