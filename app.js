@@ -21,6 +21,18 @@
   const connectionDescription = document.getElementById("connectionDescription");
   const connectionSave = document.getElementById("connectionSave");
   const connectionCancel = document.getElementById("connectionCancel");
+  const appRoot = document.querySelector(".app");
+  const openConnectionTypes = document.getElementById("openConnectionTypes");
+  const typesList = document.getElementById("typesList");
+  const typeNew = document.getElementById("typeNew");
+  const typeName = document.getElementById("typeName");
+  const typeKind = document.getElementById("typeKind");
+  const typeSpeed = document.getElementById("typeSpeed");
+  const typeColor = document.getElementById("typeColor");
+  const typeThickness = document.getElementById("typeThickness");
+  const typeSave = document.getElementById("typeSave");
+  const typeCancel = document.getElementById("typeCancel");
+  const typesForm = document.getElementById("typesForm");
 
   const model = {
     connectionTypes: [
@@ -68,6 +80,7 @@
     editingApId: null,
     editingAreaId: null,
     editingConnectionId: null,
+    editingTypeId: null,
     curveDragging: false,
     curveDrag: null,
     areaDrag: null,
@@ -873,6 +886,11 @@
     }
   });
 
+  openConnectionTypes.addEventListener("click", (event) => {
+    event.preventDefault();
+    appRoot.classList.toggle("sidebar-open");
+  });
+
   apSave.addEventListener("click", () => {
     const accessPoint = findAccessPoint(state.editingApId);
     if (!accessPoint) {
@@ -929,6 +947,37 @@
     }
   });
 
+  typeNew.addEventListener("click", () => {
+    setTypeForm({ id: null, name: "", type: "wireless", speed: "", color: "", thickness: 2 });
+  });
+  typeCancel.addEventListener("click", () => setTypeForm(null));
+  typeSave.addEventListener("click", () => {
+    const name = typeName.value.trim();
+    if (!name) {
+      return;
+    }
+    const next = {
+      id: state.editingTypeId || generateId("type"),
+      name,
+      type: typeKind.value || "wireless",
+      speed: typeSpeed.value.trim(),
+      color: typeColor.value.trim() || "#3f4a3a",
+      thickness: Math.max(1, Number(typeThickness.value) || 1),
+    };
+    if (state.editingTypeId) {
+      model.connectionTypes = model.connectionTypes.map((item) => (item.id === next.id ? next : item));
+    } else {
+      model.connectionTypes.push(next);
+      state.editingTypeId = next.id;
+    }
+    renderConnectionTypesList();
+    renderConnections();
+    if (connectionEditor.hidden === false) {
+      renderConnectionTypeOptions(connectionType.value || next.id);
+    }
+    setTypeForm(null);
+  });
+
   apRouterAdd.addEventListener("click", () => addRouterRow(""));
 
   document.addEventListener("mousedown", (event) => {
@@ -940,6 +989,8 @@
     }
   });
 
+  setTypeForm(null);
+  renderConnectionTypesList();
   render();
   setTimeout(fitToView, 50);
 
@@ -1006,8 +1057,97 @@
     }
   }
 
+  function setTypeForm(type) {
+    if (!type) {
+      state.editingTypeId = null;
+      typeName.value = "";
+      typeKind.value = "wireless";
+      typeSpeed.value = "";
+      typeColor.value = "";
+      typeThickness.value = "2";
+      typesForm.hidden = true;
+      return;
+    }
+    state.editingTypeId = type.id;
+    typeName.value = type.name || "";
+    typeKind.value = type.type || "wireless";
+    typeSpeed.value = type.speed || "";
+    typeColor.value = type.color || "";
+    typeThickness.value = type.thickness ?? 2;
+    typesForm.hidden = false;
+  }
+
+  function renderConnectionTypesList() {
+    typesList.innerHTML = "";
+    model.connectionTypes.forEach((type) => {
+      const row = document.createElement("div");
+      row.className = "type-row";
+
+      const header = document.createElement("div");
+      header.className = "type-row-header";
+
+      const title = document.createElement("div");
+      title.className = "type-row-title";
+      title.textContent = type.name;
+
+      const actions = document.createElement("div");
+      actions.className = "type-row-actions";
+
+      const edit = document.createElement("button");
+      edit.type = "button";
+      edit.className = "btn btn-outline-success btn-sm";
+      edit.textContent = "Edit";
+      edit.addEventListener("click", () => setTypeForm(type));
+
+      const del = document.createElement("button");
+      del.type = "button";
+      del.className = "btn btn-outline-danger btn-sm";
+      del.textContent = "Delete";
+      const inUse = model.connections.some((conn) => conn.typeId === type.id);
+      if (inUse) {
+        del.disabled = true;
+        del.title = "Type is used by a connection";
+      } else {
+        del.addEventListener("click", () => {
+          model.connectionTypes = model.connectionTypes.filter((item) => item.id !== type.id);
+          renderConnectionTypesList();
+          renderConnections();
+          if (connectionEditor.hidden === false) {
+            renderConnectionTypeOptions(connectionType.value);
+          }
+          if (state.editingTypeId === type.id) {
+            setTypeForm(null);
+          }
+        });
+      }
+
+      actions.appendChild(edit);
+      actions.appendChild(del);
+      header.appendChild(title);
+      header.appendChild(actions);
+
+      const meta = document.createElement("div");
+      meta.className = "type-row-meta";
+      meta.textContent = `${type.type} • ${type.speed} • ${type.color} • ${type.thickness}px`;
+
+      row.appendChild(header);
+      row.appendChild(meta);
+      typesList.appendChild(row);
+    });
+  }
+
   function renderConnectionTypeOptions(selectedId) {
     connectionType.innerHTML = "";
+    if (!model.connectionTypes.length) {
+      const option = document.createElement("option");
+      option.value = "";
+      option.textContent = "No connection types";
+      option.selected = true;
+      connectionType.appendChild(option);
+      connectionType.disabled = true;
+      return;
+    }
+    connectionType.disabled = false;
     model.connectionTypes.forEach((type) => {
       const option = document.createElement("option");
       option.value = type.id;
@@ -1017,6 +1157,9 @@
       }
       connectionType.appendChild(option);
     });
+    if (!connectionType.value) {
+      connectionType.value = model.connectionTypes[0].id;
+    }
   }
 
   function getConnectionStyle(connection) {

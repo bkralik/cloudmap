@@ -13,7 +13,37 @@
     <div class="app">
       <div class="status" id="status">
         <div class="status-title">Cloudmap</div>
+        <div class="status-links">
+          <a href="#connectionTypesPanel" id="openConnectionTypes">Connection types</a>
+        </div>
         <div class="status-text" id="statusText">Ready</div>
+      </div>
+      <div class="sidebar" id="connectionTypesPanel">
+        <div class="sidebar-header">
+          <div class="sidebar-title">Connection types</div>
+          <button id="typeNew" class="btn btn-outline-success btn-sm">New type</button>
+        </div>
+        <div class="types-list" id="typesList"></div>
+        <div class="types-form" id="typesForm" hidden>
+          <label class="editor-label" for="typeName">Name</label>
+          <input id="typeName" type="text" class="form-control form-control-sm" />
+          <label class="editor-label" for="typeKind">Type</label>
+          <select id="typeKind" class="form-select form-select-sm">
+            <option value="wireless">wireless</option>
+            <option value="metalic">metalic</option>
+            <option value="fiber">fiber</option>
+          </select>
+          <label class="editor-label" for="typeSpeed">Speed</label>
+          <input id="typeSpeed" type="text" class="form-control form-control-sm" />
+          <label class="editor-label" for="typeColor">Line color</label>
+          <input id="typeColor" type="text" class="form-control form-control-sm" placeholder="red or #ff0000" />
+          <label class="editor-label" for="typeThickness">Line thickness (px)</label>
+          <input id="typeThickness" type="number" min="1" step="1" class="form-control form-control-sm" />
+          <div class="editor-actions">
+            <button id="typeSave" class="btn btn-success btn-sm">Save</button>
+            <button id="typeCancel" class="btn btn-outline-secondary btn-sm">Cancel</button>
+          </div>
+        </div>
       </div>
       <div class="canvas" id="canvas">
         <svg id="map" aria-label="Cloudmap network"></svg>
