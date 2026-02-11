@@ -34,8 +34,16 @@ export function createAreasRenderer({ svg, areasLayer, areaHandlesLayer, constan
     return d.join(" ");
   }
 
+  function updateAreaLabels() {
+    areasLayer
+      .selectAll("text.area-label")
+      .attr("x", (d) => d.x)
+      .attr("y", (d) => d.y);
+  }
+
   function updateAreaPaths() {
     areasLayer.selectAll("path").attr("d", cloudPath);
+    updateAreaLabels();
   }
 
   function updateAreaHandles() {
@@ -120,6 +128,7 @@ export function createAreasRenderer({ svg, areasLayer, areaHandlesLayer, constan
   return {
     renderAreas,
     updateAreaPaths,
+    updateAreaLabels,
     updateAreaHandles,
     renderAreaHandles,
   };
