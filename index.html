@@ -36,7 +36,13 @@
           <label class="editor-label" for="typeSpeed">Speed</label>
           <input id="typeSpeed" type="text" class="form-control form-control-sm" />
           <label class="editor-label" for="typeColor">Line color</label>
-          <input id="typeColor" type="text" class="form-control form-control-sm" placeholder="red or #ff0000" />
+          <div class="color-row">
+            <input id="typeColor" type="text" class="form-control form-control-sm" placeholder="red or #ff0000" />
+            <button id="typeColorPick" type="button" class="btn btn-outline-secondary btn-sm color-button" aria-label="Pick color">
+              🎨
+            </button>
+            <input id="typeColorPicker" type="color" class="color-picker" value="#3f4a3a" />
+          </div>
           <label class="editor-label" for="typeThickness">Line thickness (px)</label>
           <input id="typeThickness" type="number" min="1" step="1" class="form-control form-control-sm" />
           <div class="editor-actions">

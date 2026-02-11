@@ -29,6 +29,8 @@
   const typeKind = document.getElementById("typeKind");
   const typeSpeed = document.getElementById("typeSpeed");
   const typeColor = document.getElementById("typeColor");
+  const typeColorPick = document.getElementById("typeColorPick");
+  const typeColorPicker = document.getElementById("typeColorPicker");
   const typeThickness = document.getElementById("typeThickness");
   const typeSave = document.getElementById("typeSave");
   const typeCancel = document.getElementById("typeCancel");
@@ -951,6 +953,18 @@
     setTypeForm({ id: null, name: "", type: "wireless", speed: "", color: "", thickness: 2 });
   });
   typeCancel.addEventListener("click", () => setTypeForm(null));
+  typeColorPick.addEventListener("click", () => {
+    typeColorPicker.click();
+  });
+  typeColorPicker.addEventListener("input", () => {
+    typeColor.value = typeColorPicker.value;
+  });
+  typeColor.addEventListener("blur", () => {
+    const normalized = normalizeColor(typeColor.value);
+    if (normalized) {
+      typeColorPicker.value = normalized;
+    }
+  });
   typeSave.addEventListener("click", () => {
     const name = typeName.value.trim();
     if (!name) {
@@ -1073,6 +1087,7 @@
     typeKind.value = type.type || "wireless";
     typeSpeed.value = type.speed || "";
     typeColor.value = type.color || "";
+    typeColorPicker.value = normalizeColor(type.color) || "#3f4a3a";
     typeThickness.value = type.thickness ?? 2;
     typesForm.hidden = false;
   }
@@ -1200,5 +1215,25 @@
     return Array.from(apRouters.querySelectorAll("input"))
       .map((input) => input.value.trim())
       .filter((value) => value.length > 0);
+  }
+
+  function normalizeColor(value) {
+    if (!value) {
+      return "";
+    }
+    const probe = document.createElement("div");
+    probe.style.color = value;
+    if (!probe.style.color) {
+      return "";
+    }
+    document.body.appendChild(probe);
+    const normalized = getComputedStyle(probe).color;
+    document.body.removeChild(probe);
+    const match = normalized.match(/\d+/g);
+    if (!match || match.length < 3) {
+      return "";
+    }
+    const toHex = (num) => Number(num).toString(16).padStart(2, "0");
+    return `#${toHex(match[0])}${toHex(match[1])}${toHex(match[2])}`;
   }
 })();
