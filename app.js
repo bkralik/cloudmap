@@ -1,3 +1,10 @@
+import { model, findAccessPoint, findAreaAt, findConnection } from "./src/model.js";
+import { state } from "./src/state.js";
+import { generateId, normalizeColor } from "./src/utils.js";
+import { createAreasRenderer } from "./src/render/areas.js";
+import { createConnectionsRenderer } from "./src/render/connections.js";
+import { createAccessPointsRenderer } from "./src/render/accessPoints.js";
+
 (() => {
   const svg = d3.select("#map");
   const canvas = document.getElementById("canvas");
@@ -37,58 +44,6 @@
   const typesForm = document.getElementById("typesForm");
   const typeErrors = document.getElementById("typeErrors");
 
-  const model = {
-    connectionTypes: [
-      {
-        id: "type-1",
-        name: "Pojitko 10G",
-        type: "wireless",
-        speed: "88 mbit",
-        color: "red",
-        thickness: 5,
-      },
-      {
-        id: "type-2",
-        name: "Optika Vodafone 1G",
-        type: "fiber",
-        speed: "1 gbit",
-        color: "blue",
-        thickness: 10,
-      },
-    ],
-    accessPoints: [
-      { id: "ap-1", name: "AP-01", x: 200, y: 180, areaId: "area-1", routers: ["R1"] },
-      { id: "ap-2", name: "AP-02", x: 420, y: 240, areaId: "area-1", routers: ["R2"] },
-      { id: "ap-3", name: "AP-03", x: 320, y: 360, areaId: "area-2", routers: [] },
-    ],
-    areas: [
-      { id: "area-1", name: "North", x: 320, y: 220, rx: 220, ry: 140, jitter: 0.12, pointIds: ["ap-1", "ap-2"] },
-      { id: "area-2", name: "South", x: 320, y: 360, rx: 200, ry: 120, jitter: 0.15, pointIds: ["ap-3"] },
-    ],
-    connections: [
-      { id: "conn-1", fromId: "ap-1", toId: "ap-2", curvature: 40, description: "Primary link", typeId: "type-1" },
-      { id: "conn-2", fromId: "ap-2", toId: "ap-3", curvature: 40, description: "Secondary link", typeId: "type-2" },
-    ],
-  };
-
-  const state = {
-    mode: "idle",
-    selectedAccessPointId: null,
-    connectFromId: null,
-    selectedConnectionId: null,
-    selectedAreaId: null,
-    lastMenuPos: { x: 0, y: 0 },
-    lastMenuWorld: { x: 0, y: 0 },
-    actionFinishHandler: null,
-    editingApId: null,
-    editingAreaId: null,
-    editingConnectionId: null,
-    editingTypeId: null,
-    curveDragging: false,
-    curveDrag: null,
-    areaDrag: null,
-  };
-
   const constants = {
     apRx: 34,
     apRy: 20,
@@ -113,25 +68,6 @@
       d.y = event.y;
       d3.select(this).attr("transform", `translate(${d.x}, ${d.y})`);
       updateConnectionPaths();
-    });
-
-  const areaResizeDrag = d3
-    .drag()
-    .filter((event, d) => state.mode === "movingArea" && state.selectedAreaId === d.id && event.button === 0)
-    .on("start", function (event, d) {
-      if (event.sourceEvent) {
-        event.sourceEvent.stopPropagation();
-      }
-      state.areaDrag = null;
-    })
-    .on("drag", function (event, d) {
-      const source = event.sourceEvent || event;
-      const [sx, sy] = d3.pointer(source, svg.node());
-      const [x, y] = d3.zoomTransform(svg.node()).invert([sx, sy]);
-      d.rx = Math.max(constants.areaMinRx, Math.abs(x - d.x)) / 0.7;
-      d.ry = Math.max(constants.areaMinRy, Math.abs(y - d.y)) / 0.7;
-      updateAreaPaths();
-      updateAreaHandles();
     });
 
   const zoom = d3
@@ -271,338 +207,40 @@
     connectionDescription.select();
   }
 
-  function generateId(prefix) {
-    return `${prefix}-${Math.random().toString(16).slice(2, 8)}`;
-  }
+  const { renderConnections, updateConnectionPaths } = createConnectionsRenderer({
+    connectionsLayer,
+    canvas,
+    showContextMenu,
+    showFinishMenu,
+    showActionPanel,
+    hideActionPanel,
+    hideEditors,
+    showConnectionEditor,
+    setMode,
+  });
 
-  function cloudPath(area) {
-    const w = area.rx * 2;
-    const h = area.ry * 2;
-    const x = area.x - area.rx;
-    const y = area.y - area.ry;
-    const p1x = x + 0.2 * w;
-    const p1y = y + 0.6 * h;
-    const d = [
-      `M ${p1x} ${p1y}`,
-      `C ${x + 0.05 * w} ${y + 0.6 * h}, ${x + 0.05 * w} ${y + 0.35 * h}, ${x + 0.2 * w} ${
-        y + 0.35 * h
-      }`,
-      `C ${x + 0.25 * w} ${y + 0.15 * h}, ${x + 0.45 * w} ${y + 0.1 * h}, ${x + 0.55 * w} ${
-        y + 0.25 * h
-      }`,
-      `C ${x + 0.65 * w} ${y + 0.05 * h}, ${x + 0.9 * w} ${y + 0.15 * h}, ${x + 0.85 * w} ${
-        y + 0.4 * h
-      }`,
-      `C ${x + 0.98 * w} ${y + 0.45 * h}, ${x + 0.98 * w} ${y + 0.65 * h}, ${x + 0.8 * w} ${
-        y + 0.7 * h
-      }`,
-      `C ${x + 0.78 * w} ${y + 0.9 * h}, ${x + 0.5 * w} ${y + 0.9 * h}, ${x + 0.45 * w} ${
-        y + 0.75 * h
-      }`,
-      `C ${x + 0.3 * w} ${y + 0.85 * h}, ${x + 0.15 * w} ${y + 0.8 * h}, ${x + 0.2 * w} ${
-        y + 0.6 * h
-      }`,
-      "Z",
-    ];
-    return d.join(" ");
-  }
+  const { renderAreas, updateAreaPaths, updateAreaHandles, renderAreaHandles } = createAreasRenderer({
+    svg,
+    areasLayer,
+    areaHandlesLayer,
+    constants,
+  });
 
-  function findAccessPoint(id) {
-    return model.accessPoints.find((ap) => ap.id === id);
-  }
-
-  function findConnection(id) {
-    return model.connections.find((conn) => conn.id === id);
-  }
-
-  function findConnectionType(id) {
-    return model.connectionTypes.find((type) => type.id === id);
-  }
-
-  function findAreaAt(x, y) {
-    for (let i = model.areas.length - 1; i >= 0; i -= 1) {
-      const area = model.areas[i];
-      const dx = (x - area.x) / area.rx;
-      const dy = (y - area.y) / area.ry;
-      if (dx * dx + dy * dy <= 1) {
-        return area;
-      }
-    }
-    return null;
-  }
-
-  function connectionPath(connection) {
-    const from = findAccessPoint(connection.fromId);
-    const to = findAccessPoint(connection.toId);
-    if (!from || !to) {
-      return "";
-    }
-    const x1 = from.x;
-    const y1 = from.y;
-    const x2 = to.x;
-    const y2 = to.y;
-    if (!connection.curvature) {
-      return `M ${x1} ${y1} L ${x2} ${y2}`;
-    }
-    const dx = x2 - x1;
-    const dy = y2 - y1;
-    const chord = Math.hypot(dx, dy) || 1;
-    const sagitta = Math.abs(connection.curvature);
-    const radius = chord * chord / (8 * sagitta) + sagitta / 2;
-    const sweep = connection.curvature > 0 ? 1 : 0;
-    return `M ${x1} ${y1} A ${radius} ${radius} 0 0 ${sweep} ${x2} ${y2}`;
-  }
-
-  function updateConnectionPaths() {
-    connectionsLayer.selectAll("path.connection-line").attr("d", connectionPath);
-    connectionsLayer.selectAll("path.connection-hit").attr("d", connectionPath);
-  }
-
-  function renderConnections() {
-    const selection = connectionsLayer.selectAll("g.connection").data(model.connections, (d) => d.id);
-    const enter = selection.enter().append("g").attr("class", "connection");
-    const openConnectionMenu = (event, d) => {
-      event.preventDefault();
-      event.stopPropagation();
-      hideEditors();
-      hideActionPanel();
-      state.selectedConnectionId = d.id;
-      const rect = canvas.getBoundingClientRect();
-      if (state.mode !== "idle") {
-        showFinishMenu(event.clientX - rect.left, event.clientY - rect.top);
-        return;
-      }
-      showContextMenu(event.clientX - rect.left, event.clientY - rect.top, [
-        {
-          label: "Edit connection",
-          action: () => {
-            showConnectionEditor(d);
-          },
-        },
-        {
-          label: "Change curvature",
-          action: () => {
-            state.selectedConnectionId = d.id;
-            state.curveDragging = false;
-            state.curveDrag = null;
-            setMode("curvingConnection");
-            showActionPanel("Drag on the map to change curvature.", "Finish Connection Move", () => {
-              state.selectedConnectionId = null;
-              state.curveDragging = false;
-              state.curveDrag = null;
-              setMode("idle");
-              hideActionPanel();
-            });
-          },
-        },
-        {
-          label: "Delete connection",
-          className: "btn btn-outline-danger btn-sm w-100",
-          action: () => {
-            model.connections = model.connections.filter((conn) => conn.id !== d.id);
-            state.selectedConnectionId = null;
-            renderConnections();
-          },
-        },
-      ]);
-    };
-
-    enter
-      .append("path")
-      .attr("class", "connection-hit")
-      .attr("stroke", "transparent")
-      .attr("stroke-width", 12)
-      .attr("fill", "none")
-      .attr("pointer-events", "stroke")
-      .on("contextmenu", openConnectionMenu);
-    enter
-      .append("path")
-      .attr("class", "connection-line")
-      .attr("fill", "none");
-    enter.select("path.connection-line").attr("pointer-events", "stroke").on("contextmenu", openConnectionMenu);
-    const merged = selection.merge(enter);
-    merged.select("path.connection-line").each(function (d) {
-      const style = getConnectionStyle(d);
-      d3.select(this).attr("stroke", style.color).attr("stroke-width", style.thickness);
-    });
-    updateConnectionPaths();
-    selection.exit().remove();
-  }
-
-  function updateAreaPaths() {
-    areasLayer.selectAll("path").attr("d", cloudPath);
-  }
-
-  function updateAreaHandles() {
-    areaHandlesLayer
-      .selectAll("circle.area-resize")
-      .attr("cx", (d) => d.x + d.rx*0.7)
-      .attr("cy", (d) => d.y + d.ry*0.7);
-  }
-
-  function renderAreaHandles() {
-    const data =
-      state.mode === "movingArea" && state.selectedAreaId
-        ? model.areas.filter((area) => area.id === state.selectedAreaId)
-        : [];
-    const selection = areaHandlesLayer
-      .selectAll("circle.area-resize")
-      .data(data, (d) => d.id);
-    const enter = selection
-      .enter()
-      .append("circle")
-      .attr("class", "area-resize")
-      .attr("r", constants.areaHandleRadius)
-      .attr("fill", "#1f2d1f")
-      .attr("stroke", "#f4f7f2")
-      .attr("stroke-width", 2);
-    const merged = enter.merge(selection);
-    merged.attr("cx", (d) => d.x + d.rx*0.7).attr("cy", (d) => d.y + d.ry*0.7);
-    merged.call(areaResizeDrag);
-    selection.exit().remove();
-  }
-
-  function renderAreas() {
-    const selection = areasLayer.selectAll("path").data(model.areas, (d) => d.id);
-    selection
-      .enter()
-      .append("path")
-      .attr("fill", "rgba(110, 140, 110, 0.25)")
-      .attr("stroke", "#6a8f6a")
-      .attr("stroke-width", 2)
-      .attr("pointer-events", "none")
-      .merge(selection)
-      .attr("d", cloudPath);
-    selection.exit().remove();
-
-    const textSelection = areasLayer.selectAll("text.area-label").data(model.areas, (d) => d.id);
-    textSelection
-      .enter()
-      .append("text")
-      .attr("class", "area-label")
-      .attr("text-anchor", "middle")
-      .attr("dominant-baseline", "middle")
-      .attr("fill", "#1f2d1f")
-      .attr("font-size", 13)
-      .attr("font-weight", 600)
-      .attr("pointer-events", "none")
-      .merge(textSelection)
-      .attr("x", (d) => d.x)
-      .attr("y", (d) => d.y)
-      .text((d) => d.name);
-    textSelection.exit().remove();
-
-    renderAreaHandles();
-  }
-
-  function renderAccessPoints() {
-    const selection = accessPointsLayer.selectAll("g").data(model.accessPoints, (d) => d.id);
-    const enter = selection.enter().append("g").attr("class", "access-point");
-    enter
-      .append("ellipse")
-      .attr("rx", constants.apRx)
-      .attr("ry", constants.apRy)
-      .attr("fill", "#5fbf5f")
-      .attr("stroke", "#2f7a2f")
-      .attr("stroke-width", 2);
-    enter
-      .append("text")
-      .attr("text-anchor", "middle")
-      .attr("dominant-baseline", "middle")
-      .attr("fill", "#143214")
-      .attr("font-size", 12)
-      .attr("font-weight", 600);
-
-    const merged = enter.merge(selection);
-    merged.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
-    merged.select("text").each(function (d) {
-      renderMultilineText(d3.select(this), d.name);
-    });
-    merged.each(function () {
-      const group = d3.select(this);
-      const textNode = group.select("text").node();
-      if (!textNode) {
-        return;
-      }
-      const bbox = textNode.getBBox();
-      const rx = Math.max(constants.apRx, bbox.width / 2 + constants.apPaddingX);
-      const ry = Math.max(constants.apRy, bbox.height / 2 + constants.apPaddingY);
-      group.select("ellipse").attr("rx", rx).attr("ry", ry);
-    });
-    merged
-      .on("click", (event, d) => {
-        event.stopPropagation();
-        hideContextMenu();
-        if (state.mode === "connecting" && state.connectFromId && state.connectFromId !== d.id) {
-          const connection = {
-            id: generateId("conn"),
-            fromId: state.connectFromId,
-            toId: d.id,
-            curvature: 0,
-            description: "",
-            typeId: model.connectionTypes[0]?.id || null,
-          };
-          model.connections.push(connection);
-          state.connectFromId = null;
-          setMode("idle");
-          renderConnections();
-        }
-      })
-      .on("contextmenu", (event, d) => {
-        event.preventDefault();
-        event.stopPropagation();
-        hideEditors();
-        hideActionPanel();
-        state.selectedAccessPointId = d.id;
-        const rect = canvas.getBoundingClientRect();
-        if (state.mode !== "idle") {
-          showFinishMenu(event.clientX - rect.left, event.clientY - rect.top);
-          return;
-        }
-        showContextMenu(event.clientX - rect.left, event.clientY - rect.top, [
-          {
-            label: "Connect to...",
-            action: () => {
-              state.connectFromId = d.id;
-              setMode("connecting", d.name);
-            },
-          },
-          {
-            label: "Edit AP",
-            action: () => {
-              showApEditor(d);
-            },
-          },
-          {
-            label: "Move AP",
-            action: () => {
-              state.selectedAccessPointId = d.id;
-              setMode("movingAp", d.name);
-              showActionPanel("Drag the access point to move it.", "Finish AP Move", () => {
-                state.selectedAccessPointId = null;
-                setMode("idle");
-                hideActionPanel();
-              });
-            },
-          },
-          {
-            label: "Delete AP",
-            className: "btn btn-outline-danger btn-sm w-100",
-            action: () => {
-              model.accessPoints = model.accessPoints.filter((ap) => ap.id !== d.id);
-              model.connections = model.connections.filter(
-                (conn) => conn.fromId !== d.id && conn.toId !== d.id
-              );
-              state.selectedAccessPointId = null;
-              renderAccessPoints();
-              renderConnections();
-            },
-          },
-        ]);
-      });
-    merged.call(drag);
-    selection.exit().remove();
-  }
+  const { renderAccessPoints } = createAccessPointsRenderer({
+    accessPointsLayer,
+    canvas,
+    constants,
+    drag,
+    showContextMenu,
+    showFinishMenu,
+    showActionPanel,
+    hideActionPanel,
+    hideEditors,
+    hideContextMenu,
+    showApEditor,
+    setMode,
+    renderConnections,
+  });
 
   function render() {
     renderConnections();
@@ -1054,24 +692,6 @@
     connection.curvature = Math.max(-clamp, Math.min(clamp, next));
   }
 
-  function renderMultilineText(textSelection, text) {
-    textSelection.text(null);
-    textSelection.attr("text-anchor", "middle");
-    const lines = String(text || "").split(/\r?\n/);
-    const lineHeight = constants.apLineHeight;
-    if (!lines.length) {
-      return;
-    }
-    const startDy = -((lines.length - 1) / 2) * lineHeight;
-    lines.forEach((lineText, index) => {
-      textSelection
-        .append("tspan")
-        .attr("x", 0)
-        .attr("dy", index === 0 ? startDy : lineHeight)
-        .text(lineText);
-    });
-  }
-
   function renderRoutersList(routers) {
     apRouters.innerHTML = "";
     (routers || []).forEach((router) => addRouterRow(router));
@@ -1189,21 +809,6 @@
     }
   }
 
-  function getConnectionStyle(connection) {
-    const fallback = { color: "#3f4a3a", thickness: 2 };
-    if (!connection) {
-      return fallback;
-    }
-    const type = findConnectionType(connection.typeId);
-    if (!type) {
-      return fallback;
-    }
-    return {
-      color: type.color || fallback.color,
-      thickness: Number(type.thickness) || fallback.thickness,
-    };
-  }
-
   function addRouterRow(value) {
     const row = document.createElement("div");
     row.className = "router-row";
@@ -1227,26 +832,6 @@
     return Array.from(apRouters.querySelectorAll("input"))
       .map((input) => input.value.trim())
       .filter((value) => value.length > 0);
-  }
-
-  function normalizeColor(value) {
-    if (!value) {
-      return "";
-    }
-    const probe = document.createElement("div");
-    probe.style.color = value;
-    if (!probe.style.color) {
-      return "";
-    }
-    document.body.appendChild(probe);
-    const normalized = getComputedStyle(probe).color;
-    document.body.removeChild(probe);
-    const match = normalized.match(/\d+/g);
-    if (!match || match.length < 3) {
-      return "";
-    }
-    const toHex = (num) => Number(num).toString(16).padStart(2, "0");
-    return `#${toHex(match[0])}${toHex(match[1])}${toHex(match[2])}`;
   }
 
   function validateTypeForm() {

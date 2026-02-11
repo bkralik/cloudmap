@@ -1,0 +1,17 @@
+export const state = {
+  mode: "idle",
+  selectedAccessPointId: null,
+  connectFromId: null,
+  selectedConnectionId: null,
+  selectedAreaId: null,
+  lastMenuPos: { x: 0, y: 0 },
+  lastMenuWorld: { x: 0, y: 0 },
+  actionFinishHandler: null,
+  editingApId: null,
+  editingAreaId: null,
+  editingConnectionId: null,
+  editingTypeId: null,
+  curveDragging: false,
+  curveDrag: null,
+  areaDrag: null,
+};
