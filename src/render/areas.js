@@ -42,7 +42,7 @@ export function createAreasRenderer({ svg, areasLayer, areaHandlesLayer, constan
   }
 
   function updateAreaPaths() {
-    areasLayer.selectAll("path").attr("d", cloudPath);
+    areasLayer.selectAll("path.area-shape").attr("d", cloudPath);
     updateAreaLabels();
   }
 
@@ -93,14 +93,15 @@ export function createAreasRenderer({ svg, areasLayer, areaHandlesLayer, constan
   }
 
   function renderAreas() {
-    const selection = areasLayer.selectAll("path").data(model.areas, (d) => d.id);
+    const selection = areasLayer.selectAll("path.area-shape").data(model.areas, (d) => d.id);
     selection
       .enter()
       .append("path")
+      .attr("class", "area-shape")
       .attr("fill", "rgba(110, 140, 110, 0.25)")
       .attr("stroke", "#6a8f6a")
       .attr("stroke-width", 2)
-      .attr("pointer-events", "none")
+      .attr("pointer-events", "visiblePainted")
       .merge(selection)
       .attr("d", cloudPath);
     selection.exit().remove();

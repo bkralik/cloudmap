@@ -1,4 +1,4 @@
-import { model, findAreaAt, findAccessPoint, findConnection } from "../model.js";
+import { model, findAccessPoint, findConnection } from "../model.js";
 import { state } from "../state.js";
 
 export function attachCanvasInteractions({
@@ -210,7 +210,9 @@ export function attachCanvasInteractions({
       showFinishMenu(event.clientX - rect.left, event.clientY - rect.top);
       return;
     }
-    const area = findAreaAt(x, y);
+    const target = event.target;
+    const area =
+      target && target.classList && target.classList.contains("area-shape") ? d3.select(target).datum() : null;
     if (area) {
       state.selectedAreaId = area.id;
       showContextMenu(event.clientX - rect.left, event.clientY - rect.top, [
