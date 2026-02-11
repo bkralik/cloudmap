@@ -94,7 +94,10 @@ export function createConnectionTypesPanel({
 
       const meta = document.createElement("div");
       meta.className = "type-row-meta";
-      meta.textContent = `${type.type} • ${type.speed} • ${type.color} • ${type.thickness}px`;
+      const metaParts = [type.type, type.speed, type.color, `${type.thickness}px`].filter(
+        (value) => value && String(value).trim().length > 0
+      );
+      meta.textContent = metaParts.join(" - ");
 
       row.appendChild(header);
       row.appendChild(meta);
