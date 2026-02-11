@@ -185,6 +185,26 @@
     contextMenu.style.top = `${y}px`;
   }
 
+  function showFinishMenu(x, y) {
+    showContextMenu(x, y, [
+      {
+        label: "Finish",
+        className: "btn btn-success btn-sm w-100",
+        action: () => {
+          if (state.actionFinishHandler) {
+            state.actionFinishHandler();
+          } else {
+            state.connectFromId = null;
+            state.selectedAccessPointId = null;
+            state.selectedConnectionId = null;
+            state.selectedAreaId = null;
+            setMode("idle");
+          }
+        },
+      },
+    ]);
+  }
+
   function showActionPanel(text, buttonLabel, onFinish) {
     actionText.textContent = text;
     actionFinish.textContent = buttonLabel;
@@ -332,6 +352,10 @@
       hideActionPanel();
       state.selectedConnectionId = d.id;
       const rect = canvas.getBoundingClientRect();
+      if (state.mode !== "idle") {
+        showFinishMenu(event.clientX - rect.left, event.clientY - rect.top);
+        return;
+      }
       showContextMenu(event.clientX - rect.left, event.clientY - rect.top, [
         {
           label: "Edit connection",
@@ -515,6 +539,10 @@
         hideActionPanel();
         state.selectedAccessPointId = d.id;
         const rect = canvas.getBoundingClientRect();
+        if (state.mode !== "idle") {
+          showFinishMenu(event.clientX - rect.left, event.clientY - rect.top);
+          return;
+        }
         showContextMenu(event.clientX - rect.left, event.clientY - rect.top, [
           {
             label: "Connect to...",
@@ -602,6 +630,9 @@
   }
 
   svg.on("click", (event) => {
+    if (event.button && event.button !== 0) {
+      return;
+    }
     hideContextMenu();
     hideEditors();
     const [sx, sy] = d3.pointer(event);
@@ -642,6 +673,13 @@
       state.connectFromId = null;
       setMode("idle");
     }
+  });
+
+  svg.on("mousedown.hide", (event) => {
+    if (event.button !== 0) {
+      return;
+    }
+    hideContextMenu();
   });
 
   svg.on("mousedown", (event) => {
@@ -732,14 +770,15 @@
     event.preventDefault();
     hideEditors();
     hideActionPanel();
-    if (state.mode !== "idle") {
-      return;
-    }
     const [sx, sy] = d3.pointer(event);
     const transform = d3.zoomTransform(svg.node());
     const [x, y] = transform.invert([sx, sy]);
     state.lastMenuWorld = { x, y };
     const rect = canvas.getBoundingClientRect();
+    if (state.mode !== "idle") {
+      showFinishMenu(event.clientX - rect.left, event.clientY - rect.top);
+      return;
+    }
     const area = findAreaAt(x, y);
     if (area) {
       state.selectedAreaId = area.id;
@@ -892,7 +931,10 @@
 
   apRouterAdd.addEventListener("click", () => addRouterRow(""));
 
-  document.addEventListener("click", (event) => {
+  document.addEventListener("mousedown", (event) => {
+    if (event.button !== 0) {
+      return;
+    }
     if (!contextMenu.contains(event.target)) {
       hideContextMenu();
     }
