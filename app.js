@@ -35,6 +35,7 @@
   const typeSave = document.getElementById("typeSave");
   const typeCancel = document.getElementById("typeCancel");
   const typesForm = document.getElementById("typesForm");
+  const typeErrors = document.getElementById("typeErrors");
 
   const model = {
     connectionTypes: [
@@ -958,25 +959,33 @@
   });
   typeColorPicker.addEventListener("input", () => {
     typeColor.value = typeColorPicker.value;
+    updateTypeValidation();
   });
   typeColor.addEventListener("blur", () => {
     const normalized = normalizeColor(typeColor.value);
     if (normalized) {
       typeColorPicker.value = normalized;
     }
+    updateTypeValidation();
   });
+  typeName.addEventListener("input", () => updateTypeValidation());
+  typeKind.addEventListener("change", () => updateTypeValidation());
+  typeSpeed.addEventListener("input", () => updateTypeValidation());
+  typeColor.addEventListener("input", () => updateTypeValidation());
+  typeThickness.addEventListener("input", () => updateTypeValidation());
   typeSave.addEventListener("click", () => {
-    const name = typeName.value.trim();
-    if (!name) {
+    const validation = validateTypeForm();
+    if (!validation.ok) {
       return;
     }
+    const name = typeName.value.trim();
     const next = {
       id: state.editingTypeId || generateId("type"),
       name,
       type: typeKind.value || "wireless",
       speed: typeSpeed.value.trim(),
-      color: typeColor.value.trim() || "#3f4a3a",
-      thickness: Math.max(1, Number(typeThickness.value) || 1),
+      color: validation.color || "#3f4a3a",
+      thickness: validation.thickness,
     };
     if (state.editingTypeId) {
       model.connectionTypes = model.connectionTypes.map((item) => (item.id === next.id ? next : item));
@@ -1080,6 +1089,8 @@
       typeColor.value = "";
       typeThickness.value = "2";
       typesForm.hidden = true;
+      typeErrors.textContent = "";
+      typeSave.disabled = false;
       return;
     }
     state.editingTypeId = type.id;
@@ -1090,6 +1101,7 @@
     typeColorPicker.value = normalizeColor(type.color) || "#3f4a3a";
     typeThickness.value = type.thickness ?? 2;
     typesForm.hidden = false;
+    updateTypeValidation();
   }
 
   function renderConnectionTypesList() {
@@ -1235,5 +1247,33 @@
     }
     const toHex = (num) => Number(num).toString(16).padStart(2, "0");
     return `#${toHex(match[0])}${toHex(match[1])}${toHex(match[2])}`;
+  }
+
+  function validateTypeForm() {
+    const errors = [];
+    const name = typeName.value.trim();
+    if (!name) {
+      errors.push("Name is required.");
+    }
+    const color = normalizeColor(typeColor.value.trim());
+    if (!color) {
+      errors.push("Line color must be valid.");
+    }
+    const thicknessValue = Number(typeThickness.value);
+    const thickness =
+      Number.isFinite(thicknessValue) && thicknessValue >= 1 && thicknessValue <= 100 ? thicknessValue : null;
+    if (thickness === null) {
+      errors.push("Line thickness must be between 1 and 100.");
+    }
+    typeErrors.innerHTML = errors.map((err) => `<div>${err}</div>`).join("");
+    typeSave.disabled = errors.length > 0;
+    return { ok: errors.length === 0, color, thickness };
+  }
+
+  function updateTypeValidation() {
+    if (typesForm.hidden) {
+      return;
+    }
+    validateTypeForm();
   }
 })();
