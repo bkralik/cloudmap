@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cloudmap Model",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["connectionTypes", "accessPoints", "areas", "connections"],
+  "properties": {
+    "connectionTypes": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/connectionType" }
+    },
+    "accessPoints": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/accessPoint" }
+    },
+    "areas": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/area" }
+    },
+    "connections": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/connection" }
+    }
+  },
+  "definitions": {
+    "connectionType": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "type", "speed", "color", "thickness"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "type": { "type": "string", "enum": ["wireless", "metalic", "fiber"] },
+        "speed": { "type": "string" },
+        "color": { "type": "string" },
+        "thickness": { "type": "number" }
+      }
+    },
+    "accessPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "x", "y", "areaId", "routers"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "areaId": { "type": ["string", "null"] },
+        "routers": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "area": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "x", "y", "rx", "ry", "jitter", "pointIds"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "rx": { "type": "number" },
+        "ry": { "type": "number" },
+        "jitter": { "type": "number" },
+        "pointIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "connection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "fromId", "toId", "curvature", "description", "typeId"],
+      "properties": {
+        "id": { "type": "string" },
+        "fromId": { "type": "string" },
+        "toId": { "type": "string" },
+        "curvature": { "type": "number" },
+        "description": { "type": "string" },
+        "typeId": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

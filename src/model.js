@@ -1,36 +1,29 @@
+// Model structure:
+// {
+//   connectionTypes: [{ id, name, type: "wireless"|"metalic"|"fiber", speed, color, thickness }],
+//   accessPoints: [{ id, name, x, y, areaId, routers: [string] }],
+//   areas: [{ id, name, x, y, rx, ry, jitter, pointIds: [apId] }],
+//   connections: [{ id, fromId, toId, curvature, description, typeId }],
+// }
 export const model = {
-  connectionTypes: [
-    {
-      id: "type-1",
-      name: "Pojitko 10G",
-      type: "wireless",
-      speed: "88 mbit",
-      color: "red",
-      thickness: 5,
-    },
-    {
-      id: "type-2",
-      name: "Optika Vodafone 1G",
-      type: "fiber",
-      speed: "1 gbit",
-      color: "blue",
-      thickness: 10,
-    },
-  ],
-  accessPoints: [
-    { id: "ap-1", name: "AP-01", x: 200, y: 180, areaId: "area-1", routers: ["R1"] },
-    { id: "ap-2", name: "AP-02", x: 420, y: 240, areaId: "area-1", routers: ["R2"] },
-    { id: "ap-3", name: "AP-03", x: 320, y: 360, areaId: "area-2", routers: [] },
-  ],
-  areas: [
-    { id: "area-1", name: "North", x: 320, y: 220, rx: 220, ry: 140, jitter: 0.12, pointIds: ["ap-1", "ap-2"] },
-    { id: "area-2", name: "South", x: 320, y: 360, rx: 200, ry: 120, jitter: 0.15, pointIds: ["ap-3"] },
-  ],
-  connections: [
-    { id: "conn-1", fromId: "ap-1", toId: "ap-2", curvature: 40, description: "Primary link", typeId: "type-1" },
-    { id: "conn-2", fromId: "ap-2", toId: "ap-3", curvature: 40, description: "Secondary link", typeId: "type-2" },
-  ],
+  connectionTypes: [],
+  accessPoints: [],
+  areas: [],
+  connections: [],
 };
+
+export async function loadModel(url) {
+  const response = await fetch(url, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Failed to load model from ${url}: ${response.status}`);
+  }
+  const data = await response.json();
+  model.connectionTypes = Array.isArray(data.connectionTypes) ? data.connectionTypes : [];
+  model.accessPoints = Array.isArray(data.accessPoints) ? data.accessPoints : [];
+  model.areas = Array.isArray(data.areas) ? data.areas : [];
+  model.connections = Array.isArray(data.connections) ? data.connections : [];
+  return model;
+}
 
 export function findAccessPoint(id) {
   return model.accessPoints.find((ap) => ap.id === id);

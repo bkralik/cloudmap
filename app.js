@@ -1,7 +1,8 @@
 import { model } from "./src/model.js";
 import { state } from "./src/state.js";
 import { generateId, normalizeColor } from "./src/utils.js";
-import { constants } from "./src/constants.js";
+import { constants, mapDataUrl } from "./src/constants.js";
+import { loadModel } from "./src/model.js";
 import { createAreasRenderer } from "./src/render/areas.js";
 import { createConnectionsRenderer } from "./src/render/connections.js";
 import { createAccessPointsRenderer } from "./src/render/accessPoints.js";
@@ -15,7 +16,7 @@ import { createApDrag } from "./src/interactions/apDrag.js";
 import { attachCanvasInteractions } from "./src/interactions/canvas.js";
 import { createFitToView } from "./src/viewport.js";
 
-(() => {
+(async () => {
   const svg = d3.select("#map");
   const canvas = document.getElementById("canvas");
   const statusText = document.getElementById("statusText");
@@ -202,6 +203,13 @@ import { createFitToView } from "./src/viewport.js";
   };
 
   connectionTypesPanel.wireSave(onTypesChanged);
+
+  try {
+    await loadModel(mapDataUrl);
+  } catch (error) {
+    console.error(error);
+  }
+
   connectionTypesPanel.setTypeForm(null);
   connectionTypesPanel.renderConnectionTypesList(onTypesChanged);
 

@@ -8,3 +8,5 @@ export const constants = {
   areaMinRy: 40,
   areaHandleRadius: 6,
 };
+
+export const mapDataUrl = "data/imported.json";

@@ -1,0 +1,5186 @@
+{
+  "connectionTypes": [
+    {
+      "id": "type-1",
+      "name": "Imported #ff0000 8px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ff0000",
+      "thickness": 8
+    },
+    {
+      "id": "type-2",
+      "name": "Imported #ffa500 4px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ffa500",
+      "thickness": 4
+    },
+    {
+      "id": "type-3",
+      "name": "Imported #ff4646 8px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ff4646",
+      "thickness": 8
+    },
+    {
+      "id": "type-4",
+      "name": "Imported #0e820e 6px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#0e820e",
+      "thickness": 6
+    },
+    {
+      "id": "type-5",
+      "name": "Imported #15c115 2px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#15c115",
+      "thickness": 2
+    },
+    {
+      "id": "type-6",
+      "name": "Imported #0000ff 6px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#0000ff",
+      "thickness": 6
+    },
+    {
+      "id": "type-7",
+      "name": "Imported #0e820e 5px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#0e820e",
+      "thickness": 5
+    },
+    {
+      "id": "type-8",
+      "name": "Imported #ff0000 6px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ff0000",
+      "thickness": 6
+    },
+    {
+      "id": "type-9",
+      "name": "Imported #15c115 4px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#15c115",
+      "thickness": 4
+    },
+    {
+      "id": "type-10",
+      "name": "Imported #ffa500 5px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ffa500",
+      "thickness": 5
+    },
+    {
+      "id": "type-11",
+      "name": "Imported #8d009c 6px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#8d009c",
+      "thickness": 6
+    },
+    {
+      "id": "type-12",
+      "name": "Imported #0e820e 4px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#0e820e",
+      "thickness": 4
+    },
+    {
+      "id": "type-13",
+      "name": "Imported #ffa500 6px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ffa500",
+      "thickness": 6
+    },
+    {
+      "id": "type-14",
+      "name": "Imported #7f7f7f 5px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#7f7f7f",
+      "thickness": 5
+    },
+    {
+      "id": "type-15",
+      "name": "Imported #ff06b0 7px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ff06b0",
+      "thickness": 7
+    },
+    {
+      "id": "type-16",
+      "name": "Imported #ff0000 20px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ff0000",
+      "thickness": 20
+    },
+    {
+      "id": "type-17",
+      "name": "Imported #ff4646 6px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ff4646",
+      "thickness": 6
+    },
+    {
+      "id": "type-18",
+      "name": "Imported #ff0000 10px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ff0000",
+      "thickness": 10
+    },
+    {
+      "id": "type-19",
+      "name": "Imported #ff8181 6px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ff8181",
+      "thickness": 6
+    },
+    {
+      "id": "type-20",
+      "name": "Imported #7f7f7f 20px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#7f7f7f",
+      "thickness": 20
+    },
+    {
+      "id": "type-21",
+      "name": "Imported #00e6ff 8px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#00e6ff",
+      "thickness": 8
+    },
+    {
+      "id": "type-22",
+      "name": "Imported #0000ff 5px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#0000ff",
+      "thickness": 5
+    },
+    {
+      "id": "type-23",
+      "name": "Imported #ff0000 5px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ff0000",
+      "thickness": 5
+    },
+    {
+      "id": "type-24",
+      "name": "Imported #0e820e 7px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#0e820e",
+      "thickness": 7
+    },
+    {
+      "id": "type-25",
+      "name": "Imported #ff0000 4px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ff0000",
+      "thickness": 4
+    },
+    {
+      "id": "type-26",
+      "name": "Imported #ffa500 2px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ffa500",
+      "thickness": 2
+    },
+    {
+      "id": "type-27",
+      "name": "Imported #7f7f7f 2px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#7f7f7f",
+      "thickness": 2
+    },
+    {
+      "id": "type-28",
+      "name": "Imported #ff8181 10px",
+      "type": "metalic",
+      "speed": "",
+      "color": "#ff8181",
+      "thickness": 10
+    }
+  ],
+  "accessPoints": [
+    {
+      "id": "ap-1",
+      "name": "AP-01",
+      "x": -594.9375000000001,
+      "y": 912.9375,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-2",
+      "name": "49 Piletice",
+      "x": 1762.9467949571363,
+      "y": -9.965996985645717,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-3",
+      "name": "8 Plotiště",
+      "x": 767.3945406328555,
+      "y": -162.73053299287912,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-4",
+      "name": "60, 160 Postman",
+      "x": 540.3294895352007,
+      "y": -429.46425,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-5",
+      "name": "3,103,203 D-network",
+      "x": 1468.303257356945,
+      "y": 245.99999999999994,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-6",
+      "name": "15, 55, 94, 95\nLhota pod Libčany",
+      "x": -595.1603775151934,
+      "y": 467.9445118057482,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-7",
+      "name": "11 Malšovice",
+      "x": 1379.3871555198712,
+      "y": 543.8805882576422,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-8",
+      "name": "64,163,164 JaTy",
+      "x": 1159.2571750045383,
+      "y": -26.09008525149497,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-9",
+      "name": "Dobruška",
+      "x": 1785.0,
+      "y": -475.5937499999998,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-10",
+      "name": "114, Bříza",
+      "x": -248.15976160674046,
+      "y": -206.7537226319214,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-11",
+      "name": "18,88 Praskačka",
+      "x": -299.97984051103305,
+      "y": 577.8750000000001,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-12",
+      "name": "6 Kukleny",
+      "x": -174.91904177056676,
+      "y": 362.06249998882413,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-13",
+      "name": "179, 181\nChlumec n/C",
+      "x": -1796.2507500000002,
+      "y": 483.8924999999999,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-14",
+      "name": "12, 112, 122, 212\nStěžery",
+      "x": -395.4667166834129,
+      "y": 204.53760142335818,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-15",
+      "name": "37, 137, 237\n127, 227, 133\nKocourkov",
+      "x": 337.538924526229,
+      "y": 647.9051610062577,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-16",
+      "name": "138\nNerudova",
+      "x": 210.31348953077526,
+      "y": 220.04972911489688,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-17",
+      "name": "180\nChudeřice",
+      "x": -1296.185712137317,
+      "y": 740.327729114897,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-18",
+      "name": "4 PMV\nIGW",
+      "x": 849.923428442238,
+      "y": 450.41400000000004,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-19",
+      "name": "50\nPouchov",
+      "x": 1607.2675801627722,
+      "y": -105.013320862538,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-20",
+      "name": "19\nLipky",
+      "x": 539.5074737571305,
+      "y": 350.88422911489687,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-21",
+      "name": "28\nHrádek",
+      "x": -791.799235669714,
+      "y": 172.6416291148969,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-22",
+      "name": "22, 170\nPlačice",
+      "x": -128.75361578092284,
+      "y": 580.402229114897,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-23",
+      "name": "prefix\nnázev",
+      "x": -1697.8867708146054,
+      "y": -478.92927088510316,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-24",
+      "name": "59 Libišany",
+      "x": -179.92039051894673,
+      "y": 1081.9529670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-25",
+      "name": "58 Krásnice",
+      "x": -385.2396682626983,
+      "y": 986.3954670296858,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-26",
+      "name": "84\nProbluz",
+      "x": -937.1947824270947,
+      "y": 43.463579114896845,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-27",
+      "name": "42 Stěžírky",
+      "x": -301.3949752628518,
+      "y": 59.61551700712059,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-28",
+      "name": "4\n Pentagon",
+      "x": 652.7940129605695,
+      "y": 755.9397291374622,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-29",
+      "name": "46\nTěchlovice",
+      "x": -622.9862588946952,
+      "y": 153.53102911489697,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-30",
+      "name": "47\nRadostov",
+      "x": -827.2707555927923,
+      "y": 319.78097911489704,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-31",
+      "name": "39\nRoudnice1",
+      "x": -876.2791712273047,
+      "y": 427.172729137462,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-32",
+      "name": "prefix\nnázev",
+      "x": -1543.191770814606,
+      "y": -476.44377088510316,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-33",
+      "name": "65 Polizy",
+      "x": -705.2399549409954,
+      "y": 736.1684670071205,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-34",
+      "name": "66\nBrouzd.",
+      "x": 1222.6130099755997,
+      "y": 139.71122911489687,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-35",
+      "name": "68 Osice",
+      "x": -593.3338496907817,
+      "y": 731.5784670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-36",
+      "name": "69 Sedlice",
+      "x": -469.90635840014863,
+      "y": 754.5749670071327,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-37",
+      "name": "107 Kratonohy",
+      "x": -970.7182091112265,
+      "y": 498.103467007123,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-38",
+      "name": "178\nTrnava",
+      "x": -969.6099842181654,
+      "y": 332.0952291148968,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-39",
+      "name": "16\nBenešova",
+      "x": 1131.7230831684997,
+      "y": 718.7142291148969,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-40",
+      "name": "26\nOsičky",
+      "x": -811.009320475106,
+      "y": 810.0477291148969,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-41",
+      "name": "38\nSyrovátka",
+      "x": -907.9987969427068,
+      "y": 577.8117291148969,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-42",
+      "name": "177\nTřesice",
+      "x": -1053.756365932891,
+      "y": 422.2662291148966,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-43",
+      "name": "Sokolík",
+      "x": 1376.1674690244665,
+      "y": 2.8717170071205835,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-44",
+      "name": "113 Meteor",
+      "x": -336.3368027489511,
+      "y": -43.382132992879406,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-45",
+      "name": "113 Kozlovka",
+      "x": -214.92831726456268,
+      "y": -103.6831829928794,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-46",
+      "name": "177 BydLo",
+      "x": -1205.471615932891,
+      "y": 469.8449670071208,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-47",
+      "name": "2, 202, 203\nLibuše/spar",
+      "x": 1182.05823529906,
+      "y": 353.74322911489685,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-48",
+      "name": "43\nKenny3",
+      "x": 827.0925976841115,
+      "y": 43.54652911489687,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-49",
+      "name": "17 Theo",
+      "x": 669.2823023782945,
+      "y": 82.5779670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-50",
+      "name": "21 Tapo",
+      "x": 1407.4563023782944,
+      "y": -156.2970329928794,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-51",
+      "name": "20\nSokol",
+      "x": 1104.2007730396504,
+      "y": -250.34277088510314,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-52",
+      "name": "70\nSvinary",
+      "x": 1930.5309251702108,
+      "y": 216.91922911489684,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-53",
+      "name": "Slatina",
+      "x": 1951.9398666158904,
+      "y": -41.430332992879414,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-54",
+      "name": "76 Malšova\nLhota A",
+      "x": 1657.840445799488,
+      "y": 575.7087291148969,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-55",
+      "name": "14\nHive",
+      "x": 762.2407378947617,
+      "y": 718.469729114897,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-56",
+      "name": "80\nVecino",
+      "x": 629.4020157818445,
+      "y": 957.4992291148968,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-57",
+      "name": "25, 149 Hvězda",
+      "x": 701.7285131246589,
+      "y": 1048.1759670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-58",
+      "name": "79, 81\nBrožíkova",
+      "x": 1034.7547030572935,
+      "y": 862.5777291148969,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-59",
+      "name": "90 Zvonička",
+      "x": 1379.0989838474989,
+      "y": 1030.5794670071207,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-60",
+      "name": "29 Hřbitov",
+      "x": 1038.8984516057324,
+      "y": 1314.4754670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-61",
+      "name": "45 Roudnička",
+      "x": 956.2740599435211,
+      "y": 1526.4524670071207,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-62",
+      "name": "8 Kalinka",
+      "x": 76.0971150092825,
+      "y": -267.3765329928794,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-63",
+      "name": "63 Drtinova",
+      "x": 69.84975434792662,
+      "y": -432.51903299287943,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-64",
+      "name": "35, 135\nYzop",
+      "x": 577.7126356706383,
+      "y": -63.81747088510316,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-65",
+      "name": "74\nDukelská",
+      "x": 296.8529661213441,
+      "y": 12.612329114896841,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-66",
+      "name": "13, 77, 82\nOli",
+      "x": 455.34643103793945,
+      "y": 78.47927911489684,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-67",
+      "name": "61 Orca",
+      "x": 318.82877600425684,
+      "y": 240.91946700712057,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-68",
+      "name": "52\nLabská",
+      "x": 557.2447525948257,
+      "y": 494.18822911489684,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-69",
+      "name": "136\nPurkyně",
+      "x": 226.15142807333297,
+      "y": 396.4452291148969,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-70",
+      "name": "Farářství\n78",
+      "x": 112.82264388545873,
+      "y": 520.4592291148967,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-71",
+      "name": "PVK",
+      "x": 1352.8324499999956,
+      "y": 573.34755,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-72",
+      "name": "Gollova",
+      "x": 1420.2105,
+      "y": 528.6374999999999,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-73",
+      "name": "Sever",
+      "x": -220.18034760725146,
+      "y": -221.47650000000004,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-74",
+      "name": "Jih",
+      "x": -259.93034760725146,
+      "y": -183.22649999999996,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-75",
+      "name": "115\nLibčany",
+      "x": -639.9841304195027,
+      "y": 272.0337291148969,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-76",
+      "name": "188\nBoharyně",
+      "x": -947.272865932891,
+      "y": 247.95149999999987,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-77",
+      "name": "154\nMužíkova",
+      "x": 1294.6628990421098,
+      "y": 1350.7857291148969,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-78",
+      "name": "91\nHorákova",
+      "x": 1064.8675422173667,
+      "y": 968.261729114897,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-79",
+      "name": "215\nSekaninova",
+      "x": 818.6737030572937,
+      "y": 1354.537229114897,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-80",
+      "name": "14\nHydra",
+      "x": 568.4915215880892,
+      "y": 873.112229114897,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-81",
+      "name": "Dolíky",
+      "x": 116.77812628227221,
+      "y": -525.9810329928794,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-82",
+      "name": "56 Plch",
+      "x": -610.4069462112653,
+      "y": 953.1314670296858,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-83",
+      "name": "173 Dolany",
+      "x": -620.7744489914193,
+      "y": 1121.7149670071205,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-84",
+      "name": "126 Opatovice",
+      "x": 112.14752690280969,
+      "y": 1143.375,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-85",
+      "name": "Postman",
+      "x": 497.78550000000007,
+      "y": -445.9815,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-86",
+      "name": "Piletice2",
+      "x": 1747.8225,
+      "y": -28.110599999999977,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-87",
+      "name": "Piletice",
+      "x": 1771.7175,
+      "y": 15.504930000000021,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-88",
+      "name": "110\nZŠ NHK",
+      "x": 1399.887846232551,
+      "y": 1179.937229114897,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-89",
+      "name": "206 Budvárek",
+      "x": 1916.3785803268615,
+      "y": 73.76546700712059,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-90",
+      "name": "75 Xnet",
+      "x": 371.7644690244664,
+      "y": -76.91898299287942,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-91",
+      "name": "134 Nádraží",
+      "x": 198.60190305729364,
+      "y": -35.97123299287941,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-92",
+      "name": "Úprkova",
+      "x": 1536.2267994751717,
+      "y": 696.6929670071207,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-93",
+      "name": "118\nBřetislavova",
+      "x": 215.8886124456597,
+      "y": 79.91627911489671,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-94",
+      "name": "Skalička\n48",
+      "x": 1351.7306269612711,
+      "y": -596.5772708851032,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-95",
+      "name": "21 Plácky",
+      "x": 1318.4335246141798,
+      "y": -256.64253299287947,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-96",
+      "name": "Holubník",
+      "x": -1822.137,
+      "y": 444.3825,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-97",
+      "name": "Severní",
+      "x": 1201.1999999999998,
+      "y": -56.23244999999998,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-98",
+      "name": "JaTy",
+      "x": 1148.8748003404187,
+      "y": 31.870200000000022,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-99",
+      "name": "Grado",
+      "x": 1101.4383503404229,
+      "y": -44.17979999999998,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-100",
+      "name": "Mrazil",
+      "x": 1217.3129003404274,
+      "y": -1.0537050000000168,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-101",
+      "name": "85 Nechanice",
+      "x": -1199.4895132290155,
+      "y": -43.79658297031423,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-102",
+      "name": "Nové Město",
+      "x": -1628.1745583083848,
+      "y": 758.1945000000001,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-103",
+      "name": "New Town",
+      "x": -1594.422,
+      "y": 808.179,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-104",
+      "name": "10 Podůlšany2",
+      "x": -352.2407441742679,
+      "y": 1158.2669670296855,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-105",
+      "name": "HEP",
+      "x": -426.684,
+      "y": 130.21200000000002,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-106",
+      "name": "Gogo",
+      "x": -311.08770878219565,
+      "y": 254.24445,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-107",
+      "name": "ZITNYP",
+      "x": -386.466,
+      "y": 264.76650000000006,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-108",
+      "name": "Čochtan",
+      "x": -489.9831287425148,
+      "y": 194.46900000000002,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-109",
+      "name": "Kukleny",
+      "x": -205.65866134776653,
+      "y": 434.9475,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-110",
+      "name": "Markovka",
+      "x": -103.26341134776656,
+      "y": 401.7855,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-111",
+      "name": "Hrubínova",
+      "x": 225.33621365033716,
+      "y": 635.1659999999999,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-112",
+      "name": "Andre",
+      "x": 354.22114635958394,
+      "y": 706.6274999999999,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-113",
+      "name": "Foerstrova",
+      "x": 320.2984749179426,
+      "y": 559.0875,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-114",
+      "name": "Veverkova",
+      "x": 244.92197491794258,
+      "y": 569.079,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-115",
+      "name": "Foerstrova 2",
+      "x": 242.17131461645164,
+      "y": 532.1863286541128,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-116",
+      "name": "Andre 2",
+      "x": 261.90198589828435,
+      "y": 750.6994200790297,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-117",
+      "name": "Horní Přím",
+      "x": -607.8434752628517,
+      "y": 29.30636700712058,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-118",
+      "name": "Třebeš",
+      "x": 584.4740215880892,
+      "y": 1046.447729114897,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-119",
+      "name": "Winterova",
+      "x": 74.41956461645165,
+      "y": 311.6743286541129,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-120",
+      "name": "Pražská",
+      "x": 27.66132794888248,
+      "y": 387.92232865411296,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-121",
+      "name": "178 Homyle1",
+      "x": -1177.0835013493577,
+      "y": 204.11199966266057,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-122",
+      "name": "188 Homyle2",
+      "x": -1082.4335013493576,
+      "y": 205.31199966266055,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-123",
+      "name": "108 Malá",
+      "x": 1551.5763755097103,
+      "y": 55.0150170071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-124",
+      "name": "73 LiSt",
+      "x": -273.05363336374614,
+      "y": 906.5534670296856,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-125",
+      "name": "87 Střezetice",
+      "x": -736.944,
+      "y": -83.62499999999997,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-126",
+      "name": "9 Malé",
+      "x": 848.9028023782945,
+      "y": 160.6058670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-127",
+      "name": "Gebauerova",
+      "x": 335.9513146164516,
+      "y": 491.2933286541129,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-128",
+      "name": "Kocourkov",
+      "x": 423.8464749179426,
+      "y": 601.7085,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-129",
+      "name": "71\nDivec",
+      "x": 1925.8735975815064,
+      "y": -162.10527086253796,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-130",
+      "name": "Medkova",
+      "x": 180.11496461645166,
+      "y": 695.3098286541128,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-131",
+      "name": "Kocourkov2",
+      "x": 494.68131461645163,
+      "y": 672.5368286541129,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-132",
+      "name": "Baarova",
+      "x": 434.6821777298639,
+      "y": 547.7372407524543,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-133",
+      "name": "Hradebka",
+      "x": 447.1286342454406,
+      "y": 712.8374085613601,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-134",
+      "name": "TenisCentrum",
+      "x": 349.31952117148194,
+      "y": 774.1500303295539,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-135",
+      "name": "93 Vysoká 1",
+      "x": 408.99142529317896,
+      "y": 1118.7344670071204,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-136",
+      "name": "87 Rosnice\nStřed",
+      "x": -564.9772969223433,
+      "y": -183.62727086253796,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-137",
+      "name": "87 Rosnice\nVýchod",
+      "x": -661.3612969223434,
+      "y": -262.3772708625379,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-138",
+      "name": "Lhota 3/5",
+      "x": -655.4565,
+      "y": 503.59350000000006,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-139",
+      "name": "Lhota4",
+      "x": -728.7690000016764,
+      "y": 454.2809999983237,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-140",
+      "name": "Hubenice",
+      "x": -533.0190000016764,
+      "y": 534.7994999983237,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-141",
+      "name": "175\nKaranice",
+      "x": -1247.873256094178,
+      "y": 592.694729137462,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-142",
+      "name": "175\nPiskoviste",
+      "x": -1568.3337297201406,
+      "y": 607.6422291374621,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-143",
+      "name": "125 Čeperka1",
+      "x": -88.75138458973376,
+      "y": 1209.3224670071204,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-144",
+      "name": "124 Čeperka2",
+      "x": -67.00138458973376,
+      "y": 1330.0724670071204,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-145",
+      "name": "123 Ždánice",
+      "x": -441.73288458973377,
+      "y": 1045.3814670071201,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-146",
+      "name": "121 Čeperka3",
+      "x": -160.26388458973375,
+      "y": 1263.3689670071205,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-147",
+      "name": "186 Kunčice1",
+      "x": -1218.1977945984952,
+      "y": 92.01875135037623,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-148",
+      "name": "186 Kunčice2",
+      "x": -1182.871294598495,
+      "y": 38.97515135037623,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-149",
+      "name": "153\nVelehradska",
+      "x": 1164.3864837860147,
+      "y": 1216.271729114897,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-150",
+      "name": "141\nPod Zámečkem",
+      "x": 1163.9133727910403,
+      "y": 1095.2907291148967,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-151",
+      "name": "76 Malšova\nLhota B",
+      "x": 1827.4604457994878,
+      "y": 597.1227291148967,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-152",
+      "name": "Prima",
+      "x": 1459.475363651284,
+      "y": 428.34596700712063,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-153",
+      "name": "180\nNové Město",
+      "x": -1612.185,
+      "y": 777.5261473388646,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-154",
+      "name": "30 Winterova",
+      "x": 43.00011814326721,
+      "y": 334.3358429693765,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-155",
+      "name": "192 Satelit",
+      "x": -1509.8487297201407,
+      "y": 501.02246702968574,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-156",
+      "name": "130\nPředměřice",
+      "x": 1102.8994457380034,
+      "y": -521.8772708851033,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-157",
+      "name": "90 Lesní",
+      "x": 1487.5433462325511,
+      "y": 1113.122729114897,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-158",
+      "name": "92 Petrof",
+      "x": 1238.200700031203,
+      "y": 875.2724670071203,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-159",
+      "name": "František",
+      "x": -1852.4250000011177,
+      "y": 538.8974999988824,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-160",
+      "name": "Skalka",
+      "x": -1715.7375000011177,
+      "y": 541.4601893651082,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-161",
+      "name": "178,187,188\nHomyle",
+      "x": -1140.924,
+      "y": 223.8532499999999,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-162",
+      "name": "150 Flora",
+      "x": 1208.0298023782948,
+      "y": -417.72753299287945,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-163",
+      "name": "186 Kunčice",
+      "x": -1203.9480000000003,
+      "y": 59.62499999999962,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-164",
+      "name": "Bezrucova",
+      "x": 318.65986966309737,
+      "y": 602.5287355332257,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-165",
+      "name": "183 Klicperova",
+      "x": -1612.4182475030887,
+      "y": 162.4129726024421,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-166",
+      "name": "183 Natura",
+      "x": -1522.6429674481662,
+      "y": 258.89746935361,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-167",
+      "name": "184 Městský\núřad N.B.",
+      "x": -1635.8558936469094,
+      "y": 247.9381655945881,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-168",
+      "name": "183, 184 N. Bydžov",
+      "x": -1587.315,
+      "y": 217.9616999999998,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-169",
+      "name": "187 Homyle0",
+      "x": -1148.5010013493577,
+      "y": 266.6784996626606,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-170",
+      "name": "132 Volejka",
+      "x": -402.4108904985835,
+      "y": -167.43303297031443,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-171",
+      "name": "93 Vysoká2",
+      "x": 369.99277322410285,
+      "y": 1238.5724670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-172",
+      "name": "145 Náves",
+      "x": 497.75093400254593,
+      "y": 1009.4727291148969,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-173",
+      "name": "Stará voda",
+      "x": -1416.0346712273047,
+      "y": 770.5724670296858,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-174",
+      "name": "29 Hvězdárna",
+      "x": 905.0844516672166,
+      "y": 1212.6659670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-175",
+      "name": "88 Praskačka3",
+      "x": -241.04913452788952,
+      "y": 563.7065913680276,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-176",
+      "name": "18,88 Praskačka",
+      "x": -332.94548312765505,
+      "y": 530.9153132475402,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-177",
+      "name": "18 Praskačka2",
+      "x": -310.38002564507497,
+      "y": 627.6109577853952,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-178",
+      "name": "Sandman",
+      "x": 520.8419999988824,
+      "y": -510.26014829912975,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-179",
+      "name": "192 Pazderna",
+      "x": -1444.824676972065,
+      "y": 562.1474670296857,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-180",
+      "name": "228 Na Dubech",
+      "x": 1484.9194780412543,
+      "y": -68.5402829928794,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-181",
+      "name": "86 Malšova\nLhota C",
+      "x": 1805.8904457994877,
+      "y": 437.3727291148968,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-182",
+      "name": "SPŠ",
+      "x": 1701.2457086176016,
+      "y": -581.6565329928794,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-183",
+      "name": "Gagarin",
+      "x": 1337.5586342454408,
+      "y": 237.04790856136017,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-184",
+      "name": "Ječná 673-5",
+      "x": 1558.8926342454406,
+      "y": 303.2669085613601,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-185",
+      "name": "SNP 615-8",
+      "x": 1584.9176342454407,
+      "y": 213.54440856136017,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-186",
+      "name": "54 Jnet",
+      "x": 1368.9566342454405,
+      "y": 129.45920734143576,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-187",
+      "name": "Dnet",
+      "x": 1444.4951342454406,
+      "y": 234.26690856136014,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-188",
+      "name": "Solnická",
+      "x": 1715.163486586532,
+      "y": -481.8150329928793,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-189",
+      "name": "Družstevní",
+      "x": 1817.830328752332,
+      "y": -397.21503299287946,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-190",
+      "name": "Laichterova",
+      "x": 1876.8908317373023,
+      "y": -516.3150329928794,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-191",
+      "name": "93 Vysoká3",
+      "x": 509.6382732241029,
+      "y": 1242.3224670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-192",
+      "name": "168\nMěník",
+      "x": -1526.057343925658,
+      "y": 377.462729137462,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-193",
+      "name": "178 Trnava\nretranslace",
+      "x": -1113.6797438893404,
+      "y": 328.6319933360492,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-194",
+      "name": "Č. Dvůr 133",
+      "x": 10.864924397648615,
+      "y": 742.6004670071205,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-195",
+      "name": "Pohřebačka\nRetranslace",
+      "x": 120.83078372076008,
+      "y": 1008.6164132601593,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-196",
+      "name": "177\nKosičky",
+      "x": -1294.6245017394945,
+      "y": 348.422729137462,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-197",
+      "name": "93 Vysoká5",
+      "x": 301.74277322410285,
+      "y": 1183.0724670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-198",
+      "name": "8107\nJičínská",
+      "x": 298.56659181638247,
+      "y": -180.3977708851031,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-199",
+      "name": "Na Kotli",
+      "x": 1259.0570362881533,
+      "y": 693.2009670071203,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-200",
+      "name": "40 Fugas",
+      "x": 1208.625,
+      "y": 1528.125,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-201",
+      "name": "Fugas",
+      "x": 1137.3473375231831,
+      "y": 1505.2049349630051,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-202",
+      "name": "NaVysluni",
+      "x": 1275.6495129402065,
+      "y": 1583.4374670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-203",
+      "name": "93 Vysoká4",
+      "x": 528.2427732241028,
+      "y": 1140.3224670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-204",
+      "name": "Lhota2",
+      "x": -608.9782046219996,
+      "y": 409.48789737779055,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-205",
+      "name": "Lhota1",
+      "x": -519.0397046219997,
+      "y": 421.36039737779055,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-206",
+      "name": "Lhota6",
+      "x": -649.0335000016763,
+      "y": 441.55499999832364,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-207",
+      "name": "Lhota7",
+      "x": -464.6167046219996,
+      "y": 449.2318973777906,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-208",
+      "name": "Lhota1b",
+      "x": -540.3967046219997,
+      "y": 457.6663973777906,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-209",
+      "name": "126\nPohřebačka2",
+      "x": -72.35588548526411,
+      "y": 972.661229114897,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-210",
+      "name": "Březhrad",
+      "x": 9.018145954534837,
+      "y": 820.5194670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-211",
+      "name": "198\nBabice",
+      "x": -1407.9479696206965,
+      "y": 501.89222913746204,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-212",
+      "name": "Zamek",
+      "x": -302.5188722935313,
+      "y": 169.2208860728722,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-213",
+      "name": "Ječná 858",
+      "x": 1447.3676342454405,
+      "y": 324.3419085613601,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-214",
+      "name": "100\nSmiřice",
+      "x": 1343.6679836015621,
+      "y": -746.5772708851031,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-215",
+      "name": "Intr",
+      "x": 1940.3258317373022,
+      "y": -410.6775329928794,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-216",
+      "name": "89\nHvozdnice",
+      "x": -535.8502648239082,
+      "y": 279.7602291148969,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-217",
+      "name": "Bytovka\n278",
+      "x": -439.78588021412617,
+      "y": 233.11576835318508,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-218",
+      "name": "86 Malhota\nk Břízkám",
+      "x": 1696.7744574119772,
+      "y": 479.1552291148968,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-219",
+      "name": "Bytovka\n206/207",
+      "x": -395.869092940528,
+      "y": 175.71922889201085,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-220",
+      "name": "Dvorská 1",
+      "x": -85.58299788957177,
+      "y": 53.871998869353774,
+      "areaId": "area-1",
+      "routers": []
+    },
+    {
+      "id": "ap-221",
+      "name": "Dvorská 2",
+      "x": -13.12039788957177,
+      "y": 11.731327369353773,
+      "areaId": "area-1",
+      "routers": []
+    },
+    {
+      "id": "ap-222",
+      "name": "Dvorská 3",
+      "x": -155.77969788957176,
+      "y": 21.428048869353773,
+      "areaId": "area-1",
+      "routers": []
+    },
+    {
+      "id": "ap-223",
+      "name": "Pálenecká",
+      "x": -29.970564359377903,
+      "y": 220.17293391015554,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-224",
+      "name": "Domky",
+      "x": -231.18769096791442,
+      "y": 333.34560717041404,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-225",
+      "name": "Družstevní",
+      "x": -157.61269096791438,
+      "y": 324.870607170414,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-226",
+      "name": "Pardubická",
+      "x": -252.03832837656154,
+      "y": 373.3958349739802,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-227",
+      "name": "51\nZábědov",
+      "x": -1687.5373496704187,
+      "y": 359.77622913746205,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-228",
+      "name": "157\nSloupno",
+      "x": -1537.919770732758,
+      "y": 67.18322913746202,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-229",
+      "name": "Škola\nRetranslace",
+      "x": 344.40773372076,
+      "y": -321.92708673984066,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-230",
+      "name": "Fireman",
+      "x": 633.4424999988825,
+      "y": -369.0231482991298,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-231",
+      "name": "Náhon",
+      "x": 613.0889999988824,
+      "y": -466.98214829912985,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-232",
+      "name": "Kuklenská",
+      "x": 135.75843703180195,
+      "y": 641.3559842579505,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-233",
+      "name": "Na Hrázce",
+      "x": 1362.074676683256,
+      "y": 912.6659670071203,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-234",
+      "name": "207 Kladská",
+      "x": 1755.4440539528239,
+      "y": 155.92916700712058,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-235",
+      "name": "Lhota8",
+      "x": -576.8257953796766,
+      "y": 440.136852620533,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-236",
+      "name": "110\nZŠ NHK",
+      "x": 1422.648,
+      "y": 1233.8415,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-237",
+      "name": "Školka\nBiřička",
+      "x": 1481.9730234609628,
+      "y": 1269.2382291148967,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-238",
+      "name": "Družina NHK",
+      "x": 1289.1418434523962,
+      "y": 1469.3894670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-239",
+      "name": "Nejedlého",
+      "x": 1676.5930480439742,
+      "y": -394.09653299287936,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-240",
+      "name": "Statek",
+      "x": -751.334592940528,
+      "y": -115.78177110798914,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-241",
+      "name": "Ježíšek",
+      "x": -760.3345929405281,
+      "y": -34.781771107989144,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-242",
+      "name": "Knihovna",
+      "x": -674.759592940528,
+      "y": -50.75677110798917,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-243",
+      "name": "Borntobewild",
+      "x": 813.5799497232301,
+      "y": -180.804442440708,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-244",
+      "name": "Plotiště",
+      "x": 754.0946367622337,
+      "y": -131.15366229467924,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-245",
+      "name": "Jilmová",
+      "x": 1178.879185454107,
+      "y": 1623.9374670071206,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-246",
+      "name": "Opatovice",
+      "x": 171.18113372076007,
+      "y": 1122.7319132601594,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-247",
+      "name": "Bačinova Vila\nLAN",
+      "x": 75.9310873445849,
+      "y": 1171.4827834627163,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-248",
+      "name": "Jizba",
+      "x": -1031.982533828237,
+      "y": 583.6936102386879,
+      "areaId": "area-4",
+      "routers": []
+    },
+    {
+      "id": "ap-249",
+      "name": "Tresnovka",
+      "x": -1099.8632401235839,
+      "y": 550.3693036681482,
+      "areaId": "area-4",
+      "routers": []
+    },
+    {
+      "id": "ap-250",
+      "name": "27 Dobřenice",
+      "x": -949.2820856757852,
+      "y": 678.225,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-251",
+      "name": "DobřeniceI",
+      "x": -953.9028657545593,
+      "y": 657.5669085613602,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-252",
+      "name": "DobřeniceII škola",
+      "x": -948.6532853711929,
+      "y": 705.5679286572018,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-253",
+      "name": "Obědovice",
+      "x": -1099.7295085517198,
+      "y": 619.3292499176384,
+      "areaId": "area-4",
+      "routers": []
+    },
+    {
+      "id": "ap-254",
+      "name": "škola Dlouhá ulice",
+      "x": 697.0413558145414,
+      "y": 165.36458895363532,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-255",
+      "name": "158 Velké náměstí",
+      "x": 669.0010307893295,
+      "y": 234.80246700712058,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-256",
+      "name": "229 Cekr",
+      "x": 978.0656064753257,
+      "y": -347.2275329928794,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-257",
+      "name": "Všestary\nHejkal",
+      "x": 273.8327789688635,
+      "y": -563.535270885103,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-258",
+      "name": "Březhrad\nbytovky",
+      "x": 154.9761237186495,
+      "y": 850.4472291148977,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-259",
+      "name": "148\nLabská louka",
+      "x": 667.1585212210566,
+      "y": 1528.7562326992065,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-260",
+      "name": "Labská louka",
+      "x": 641.14223372076,
+      "y": 1399.8839132601593,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-261",
+      "name": "Svatojanská",
+      "x": 577.3767235174575,
+      "y": 1473.120433040967,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-262",
+      "name": "Labská zahrada 1",
+      "x": 761.8082263389771,
+      "y": 1593.040195429575,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-263",
+      "name": "Labská zahrada 3",
+      "x": 610.0007263389771,
+      "y": 1517.9756954295751,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-264",
+      "name": "Podzamčí",
+      "x": 742.1457235174576,
+      "y": 1447.371433040967,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-265",
+      "name": "Labská zahrada 2",
+      "x": 601.3472263389771,
+      "y": 1610.575195429575,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-266",
+      "name": "Labská zahrada 4",
+      "x": 652.441726338977,
+      "y": 1663.690195429575,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-267",
+      "name": "AP-267",
+      "x": 429.0936145902615,
+      "y": 1173.4094058780809,
+      "areaId": "area-7",
+      "routers": []
+    },
+    {
+      "id": "ap-268",
+      "name": "Prouza",
+      "x": 2094.7298315324856,
+      "y": -75.36888299287943,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-269",
+      "name": "7 Slatina",
+      "x": 2020.5736999172652,
+      "y": -46.59963118344041,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-270",
+      "name": "Prokop",
+      "x": 1801.802634245441,
+      "y": 525.4754085613602,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-271",
+      "name": "192 Za potokem",
+      "x": -1576.63109049768,
+      "y": 534.21397737558,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-272",
+      "name": "Libišany 3",
+      "x": -181.1638583797855,
+      "y": 926.8724670296864,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-273",
+      "name": "Libišany 2",
+      "x": -287.51235837978544,
+      "y": 1050.8654670296862,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-274",
+      "name": "Libišany 4",
+      "x": -218.88735837978544,
+      "y": 1014.5654670296864,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-275",
+      "name": "AP-275",
+      "x": -225.54340170385484,
+      "y": 1049.1495,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-276",
+      "name": "AP-276",
+      "x": -220.10399999999996,
+      "y": 913.8494999999999,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-277",
+      "name": "MIMO",
+      "x": -96.08700000000019,
+      "y": 1269.1581153083296,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-278",
+      "name": "161\nKarosárna",
+      "x": 866.3997440084271,
+      "y": -268.7537708851031,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-279",
+      "name": "56 Vlastik",
+      "x": -561.1200104488616,
+      "y": 898.4474670296856,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-280",
+      "name": "Cihlovka",
+      "x": -85.18897837656152,
+      "y": 357.7493349739802,
+      "areaId": null,
+      "routers": []
+    },
+    {
+      "id": "ap-281",
+      "name": "Višňová",
+      "x": -309.3201649837478,
+      "y": 203.9127954615857,
+      "areaId": null,
+      "routers": []
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-1",
+      "name": "23 Dvorská",
+      "x": -95.0500915624309,
+      "y": 23.2499999888241,
+      "rx": 110.05240843756913,
+      "ry": 76.4999999888241,
+      "jitter": 0.12,
+      "pointIds": [
+        "ap-220",
+        "ap-221",
+        "ap-222"
+      ]
+    },
+    {
+      "id": "area-2",
+      "name": "Orlická",
+      "x": 1104.9845918163828,
+      "y": 440.02796700712133,
+      "rx": 41.29859181638262,
+      "ry": 22.822467007121276,
+      "jitter": 0.12,
+      "pointIds": []
+    },
+    {
+      "id": "area-3",
+      "name": "prefix\nnázev",
+      "x": -1389.9292708146058,
+      "y": -475.33977088510306,
+      "rx": 35.79822918539412,
+      "ry": 33.422729114896846,
+      "jitter": 0.12,
+      "pointIds": []
+    },
+    {
+      "id": "area-4",
+      "name": "176\nObědovice",
+      "x": -1087.5,
+      "y": 582.5235,
+      "rx": 90.0,
+      "ry": 71.25,
+      "jitter": 0.12,
+      "pointIds": [
+        "ap-248",
+        "ap-249",
+        "ap-253"
+      ]
+    },
+    {
+      "id": "area-5",
+      "name": "Rexor",
+      "x": 1223.4365918163828,
+      "y": 479.1359670071213,
+      "rx": 41.29859181638262,
+      "ry": 22.822467007121276,
+      "jitter": 0.12,
+      "pointIds": []
+    },
+    {
+      "id": "area-6",
+      "name": "149\nMilady Horákové",
+      "x": 863.4874693522504,
+      "y": 955.9617291374619,
+      "rx": 71.94346935225047,
+      "ry": 33.42272913746191,
+      "jitter": 0.12,
+      "pointIds": []
+    },
+    {
+      "id": "area-7",
+      "name": "93 Vysoká 1-1",
+      "x": 479.61534641700274,
+      "y": 1185.0524670071213,
+      "rx": 61.69434641700275,
+      "ry": 22.822467007121276,
+      "jitter": 0.12,
+      "pointIds": [
+        "ap-267"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "conn-1",
+      "fromId": "ap-66",
+      "toId": "ap-229",
+      "curvature": 74.69760882619788,
+      "description": "",
+      "typeId": "type-1"
+    },
+    {
+      "id": "conn-2",
+      "fromId": "ap-103",
+      "toId": "ap-142",
+      "curvature": 12.86796783069451,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-3",
+      "fromId": "ap-187",
+      "toId": "ap-213",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-3"
+    },
+    {
+      "id": "conn-4",
+      "fromId": "ap-208",
+      "toId": "ap-207",
+      "curvature": 2.03932683486151,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-5",
+      "fromId": "ap-47",
+      "toId": "ap-152",
+      "curvature": 37.10200254548735,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-6",
+      "fromId": "ap-25",
+      "toId": "ap-104",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-7",
+      "fromId": "ap-138",
+      "toId": "ap-18",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-6"
+    },
+    {
+      "id": "conn-8",
+      "fromId": "ap-21",
+      "toId": "ap-138",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-9",
+      "fromId": "ap-187",
+      "toId": "ap-87",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-10",
+      "fromId": "ap-87",
+      "toId": "ap-53",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-7"
+    },
+    {
+      "id": "conn-11",
+      "fromId": "ap-47",
+      "toId": "ap-72",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-12",
+      "fromId": "ap-175",
+      "toId": "ap-138",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-7"
+    },
+    {
+      "id": "conn-13",
+      "fromId": "ap-18",
+      "toId": "ap-51",
+      "curvature": -25.659044653299627,
+      "description": "",
+      "typeId": "type-3"
+    },
+    {
+      "id": "conn-14",
+      "fromId": "ap-251",
+      "toId": "ap-138",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-15",
+      "fromId": "ap-19",
+      "toId": "ap-87",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-16",
+      "fromId": "ap-205",
+      "toId": "ap-204",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-17",
+      "fromId": "ap-29",
+      "toId": "ap-21",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-18",
+      "fromId": "ap-36",
+      "toId": "ap-138",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-19",
+      "fromId": "ap-138",
+      "toId": "ap-41",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-20",
+      "fromId": "ap-27",
+      "toId": "ap-105",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-10"
+    },
+    {
+      "id": "conn-21",
+      "fromId": "ap-138",
+      "toId": "ap-31",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-22",
+      "fromId": "ap-138",
+      "toId": "ap-30",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-23",
+      "fromId": "ap-229",
+      "toId": "ap-63",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-24",
+      "fromId": "ap-18",
+      "toId": "ap-85",
+      "curvature": 35.651720157248164,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-25",
+      "fromId": "ap-40",
+      "toId": "ap-138",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-26",
+      "fromId": "ap-40",
+      "toId": "ap-46",
+      "curvature": -120.92557984864798,
+      "description": "",
+      "typeId": "type-6"
+    },
+    {
+      "id": "conn-27",
+      "fromId": "ap-64",
+      "toId": "ap-98",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-28",
+      "fromId": "ap-18",
+      "toId": "ap-98",
+      "curvature": -31.188233270695008,
+      "description": "",
+      "typeId": "type-11"
+    },
+    {
+      "id": "conn-29",
+      "fromId": "ap-18",
+      "toId": "ap-39",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-30",
+      "fromId": "ap-220",
+      "toId": "ap-223",
+      "curvature": -14.265844638580031,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-31",
+      "fromId": "ap-47",
+      "toId": "ap-48",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-11"
+    },
+    {
+      "id": "conn-32",
+      "fromId": "ap-66",
+      "toId": "ap-49",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-11"
+    },
+    {
+      "id": "conn-33",
+      "fromId": "ap-60",
+      "toId": "ap-61",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-34",
+      "fromId": "ap-99",
+      "toId": "ap-47",
+      "curvature": 59.3690118082104,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-35",
+      "fromId": "ap-220",
+      "toId": "ap-62",
+      "curvature": -7.44492212371813,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-36",
+      "fromId": "ap-63",
+      "toId": "ap-85",
+      "curvature": -23.89166265928243,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-37",
+      "fromId": "ap-45",
+      "toId": "ap-44",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-38",
+      "fromId": "ap-73",
+      "toId": "ap-45",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-39",
+      "fromId": "ap-98",
+      "toId": "ap-45",
+      "curvature": 76.00243913422847,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-40",
+      "fromId": "ap-204",
+      "toId": "ap-138",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-12"
+    },
+    {
+      "id": "conn-41",
+      "fromId": "ap-111",
+      "toId": "ap-69",
+      "curvature": -26.699449100165975,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-42",
+      "fromId": "ap-199",
+      "toId": "ap-58",
+      "curvature": -39.17141072706869,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-43",
+      "fromId": "ap-51",
+      "toId": "ap-50",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-13"
+    },
+    {
+      "id": "conn-44",
+      "fromId": "ap-66",
+      "toId": "ap-64",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-45",
+      "fromId": "ap-75",
+      "toId": "ap-204",
+      "curvature": -10.960653049495267,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-46",
+      "fromId": "ap-18",
+      "toId": "ap-106",
+      "curvature": 190.1478304106886,
+      "description": "",
+      "typeId": "type-6"
+    },
+    {
+      "id": "conn-47",
+      "fromId": "ap-18",
+      "toId": "ap-60",
+      "curvature": 5.9320471982116345,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-48",
+      "fromId": "ap-67",
+      "toId": "ap-112",
+      "curvature": -56.56022543557941,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-49",
+      "fromId": "ap-81",
+      "toId": "ap-63",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-50",
+      "fromId": "ap-83",
+      "toId": "ap-40",
+      "curvature": -63.73475426200854,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-51",
+      "fromId": "ap-46",
+      "toId": "ap-253",
+      "curvature": -2.966725225835852,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-52",
+      "fromId": "ap-48",
+      "toId": "ap-90",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-53",
+      "fromId": "ap-86",
+      "toId": "ap-87",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-54",
+      "fromId": "ap-85",
+      "toId": "ap-278",
+      "curvature": -11.422895288830283,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-55",
+      "fromId": "ap-47",
+      "toId": "ap-187",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-11"
+    },
+    {
+      "id": "conn-56",
+      "fromId": "ap-93",
+      "toId": "ap-66",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-57",
+      "fromId": "ap-94",
+      "toId": "ap-162",
+      "curvature": -6.551448655084198,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-58",
+      "fromId": "ap-112",
+      "toId": "ap-68",
+      "curvature": 18.738775374495575,
+      "description": "",
+      "typeId": "type-7"
+    },
+    {
+      "id": "conn-59",
+      "fromId": "ap-95",
+      "toId": "ap-50",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-60",
+      "fromId": "ap-46",
+      "toId": "ap-96",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-61",
+      "fromId": "ap-101",
+      "toId": "ap-26",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-62",
+      "fromId": "ap-111",
+      "toId": "ap-109",
+      "curvature": -32.153691831348695,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-63",
+      "fromId": "ap-212",
+      "toId": "ap-105",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-64",
+      "fromId": "ap-107",
+      "toId": "ap-106",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-1"
+    },
+    {
+      "id": "conn-65",
+      "fromId": "ap-108",
+      "toId": "ap-105",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-66",
+      "fromId": "ap-109",
+      "toId": "ap-110",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-67",
+      "fromId": "ap-128",
+      "toId": "ap-113",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-68",
+      "fromId": "ap-111",
+      "toId": "ap-114",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-69",
+      "fromId": "ap-115",
+      "toId": "ap-69",
+      "curvature": 8.23490408373335,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-70",
+      "fromId": "ap-112",
+      "toId": "ap-116",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-14"
+    },
+    {
+      "id": "conn-71",
+      "fromId": "ap-117",
+      "toId": "ap-105",
+      "curvature": 5.43711693099693,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-72",
+      "fromId": "ap-118",
+      "toId": "ap-80",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-73",
+      "fromId": "ap-119",
+      "toId": "ap-120",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-74",
+      "fromId": "ap-97",
+      "toId": "ap-47",
+      "curvature": 28.854968451513212,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-75",
+      "fromId": "ap-76",
+      "toId": "ap-122",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-76",
+      "fromId": "ap-124",
+      "toId": "ap-25",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-77",
+      "fromId": "ap-26",
+      "toId": "ap-240",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-78",
+      "fromId": "ap-95",
+      "toId": "ap-97",
+      "curvature": -7.999649267987634,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-79",
+      "fromId": "ap-87",
+      "toId": "ap-129",
+      "curvature": -34.97833815549362,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-80",
+      "fromId": "ap-166",
+      "toId": "ap-46",
+      "curvature": 48.53538564843899,
+      "description": "",
+      "typeId": "type-15"
+    },
+    {
+      "id": "conn-81",
+      "fromId": "ap-278",
+      "toId": "ap-97",
+      "curvature": -14.124268352449807,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-82",
+      "fromId": "ap-112",
+      "toId": "ap-130",
+      "curvature": -2.3507683092621465,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-83",
+      "fromId": "ap-134",
+      "toId": "ap-112",
+      "curvature": -3.1744576236285944,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-84",
+      "fromId": "ap-40",
+      "toId": "ap-18",
+      "curvature": 485.29985034962306,
+      "description": "",
+      "typeId": "type-6"
+    },
+    {
+      "id": "conn-85",
+      "fromId": "ap-18",
+      "toId": "ap-28",
+      "curvature": -14.524930380707744,
+      "description": "",
+      "typeId": "type-14"
+    },
+    {
+      "id": "conn-86",
+      "fromId": "ap-240",
+      "toId": "ap-137",
+      "curvature": -21.350362858161585,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-87",
+      "fromId": "ap-240",
+      "toId": "ap-136",
+      "curvature": -4.795776729480143,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-88",
+      "fromId": "ap-138",
+      "toId": "ap-124",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-89",
+      "fromId": "ap-204",
+      "toId": "ap-206",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-90",
+      "fromId": "ap-138",
+      "toId": "ap-139",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-91",
+      "fromId": "ap-119",
+      "toId": "ap-66",
+      "curvature": -84.37338074230361,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-92",
+      "fromId": "ap-147",
+      "toId": "ap-121",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-93",
+      "fromId": "ap-46",
+      "toId": "ap-141",
+      "curvature": -4.2633510115944855,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-94",
+      "fromId": "ap-143",
+      "toId": "ap-112",
+      "curvature": -183.78058702532792,
+      "description": "",
+      "typeId": "type-6"
+    },
+    {
+      "id": "conn-95",
+      "fromId": "ap-144",
+      "toId": "ap-143",
+      "curvature": 10.987737181025558,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-96",
+      "fromId": "ap-83",
+      "toId": "ap-145",
+      "curvature": 6.8087293425037885,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-97",
+      "fromId": "ap-146",
+      "toId": "ap-144",
+      "curvature": -3.405887905023839,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-98",
+      "fromId": "ap-46",
+      "toId": "ap-193",
+      "curvature": -38.54751990206566,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-99",
+      "fromId": "ap-148",
+      "toId": "ap-147",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-100",
+      "fromId": "ap-18",
+      "toId": "ap-112",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-16"
+    },
+    {
+      "id": "conn-101",
+      "fromId": "ap-155",
+      "toId": "ap-103",
+      "curvature": -33.342010120723394,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-102",
+      "fromId": "ap-45",
+      "toId": "ap-51",
+      "curvature": -190.67457535739476,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-103",
+      "fromId": "ap-51",
+      "toId": "ap-156",
+      "curvature": -14.33612467409627,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-104",
+      "fromId": "ap-199",
+      "toId": "ap-158",
+      "curvature": -7.635455392913632,
+      "description": "",
+      "typeId": "type-17"
+    },
+    {
+      "id": "conn-105",
+      "fromId": "ap-92",
+      "toId": "ap-158",
+      "curvature": -31.276208624819432,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-106",
+      "fromId": "ap-102",
+      "toId": "ap-96",
+      "curvature": -74.64539900594316,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-107",
+      "fromId": "ap-217",
+      "toId": "ap-22",
+      "curvature": 2.6436800684238904,
+      "description": "",
+      "typeId": "type-18"
+    },
+    {
+      "id": "conn-108",
+      "fromId": "ap-162",
+      "toId": "ap-97",
+      "curvature": -19.85648094460315,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-109",
+      "fromId": "ap-156",
+      "toId": "ap-162",
+      "curvature": -0.6127543646484195,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-110",
+      "fromId": "ap-121",
+      "toId": "ap-169",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-1"
+    },
+    {
+      "id": "conn-111",
+      "fromId": "ap-135",
+      "toId": "ap-112",
+      "curvature": 5.458594441606409,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-112",
+      "fromId": "ap-17",
+      "toId": "ap-141",
+      "curvature": 12.02879850562083,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-113",
+      "fromId": "ap-91",
+      "toId": "ap-66",
+      "curvature": -57.107678465145916,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-114",
+      "fromId": "ap-173",
+      "toId": "ap-102",
+      "curvature": -6.2553927685036115,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-115",
+      "fromId": "ap-102",
+      "toId": "ap-17",
+      "curvature": -21.696959121185117,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-116",
+      "fromId": "ap-17",
+      "toId": "ap-253",
+      "curvature": 53.65499060737387,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-117",
+      "fromId": "ap-111",
+      "toId": "ap-112",
+      "curvature": 15.0,
+      "description": "",
+      "typeId": "type-19"
+    },
+    {
+      "id": "conn-118",
+      "fromId": "ap-111",
+      "toId": "ap-112",
+      "curvature": -15.139032661138858,
+      "description": "",
+      "typeId": "type-18"
+    },
+    {
+      "id": "conn-119",
+      "fromId": "ap-60",
+      "toId": "ap-174",
+      "curvature": -3.9350637996414912,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-120",
+      "fromId": "ap-178",
+      "toId": "ap-85",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-121",
+      "fromId": "ap-136",
+      "toId": "ap-74",
+      "curvature": -28.30971136207016,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-122",
+      "fromId": "ap-92",
+      "toId": "ap-54",
+      "curvature": 24.108273265026497,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-123",
+      "fromId": "ap-43",
+      "toId": "ap-180",
+      "curvature": 12.470227773917498,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-124",
+      "fromId": "ap-180",
+      "toId": "ap-87",
+      "curvature": 0.08895690670810699,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-125",
+      "fromId": "ap-138",
+      "toId": "ap-208",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-126",
+      "fromId": "ap-112",
+      "toId": "ap-172",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-127",
+      "fromId": "ap-18",
+      "toId": "ap-132",
+      "curvature": -8.202035119041723,
+      "description": "",
+      "typeId": "type-20"
+    },
+    {
+      "id": "conn-128",
+      "fromId": "ap-190",
+      "toId": "ap-189",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-14"
+    },
+    {
+      "id": "conn-129",
+      "fromId": "ap-24",
+      "toId": "ap-246",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-130",
+      "fromId": "ap-187",
+      "toId": "ap-185",
+      "curvature": -0.7034954342123203,
+      "description": "",
+      "typeId": "type-21"
+    },
+    {
+      "id": "conn-131",
+      "fromId": "ap-169",
+      "toId": "ap-38",
+      "curvature": -14.347605358620722,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-132",
+      "fromId": "ap-122",
+      "toId": "ap-38",
+      "curvature": 15.367216926364828,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-133",
+      "fromId": "ap-51",
+      "toId": "ap-87",
+      "curvature": 84.25490335466326,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-134",
+      "fromId": "ap-182",
+      "toId": "ap-188",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-22"
+    },
+    {
+      "id": "conn-135",
+      "fromId": "ap-189",
+      "toId": "ap-188",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-23"
+    },
+    {
+      "id": "conn-136",
+      "fromId": "ap-109",
+      "toId": "ap-66",
+      "curvature": 156.3915129249136,
+      "description": "",
+      "typeId": "type-1"
+    },
+    {
+      "id": "conn-137",
+      "fromId": "ap-38",
+      "toId": "ap-193",
+      "curvature": -4.261980600884438,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-138",
+      "fromId": "ap-20",
+      "toId": "ap-68",
+      "curvature": -11.565000467081203,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-139",
+      "fromId": "ap-47",
+      "toId": "ap-95",
+      "curvature": 65.92403103437859,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-140",
+      "fromId": "ap-80",
+      "toId": "ap-28",
+      "curvature": 2.001159564890839,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-141",
+      "fromId": "ap-246",
+      "toId": "ap-174",
+      "curvature": 279.96955068339673,
+      "description": "",
+      "typeId": "type-24"
+    },
+    {
+      "id": "conn-142",
+      "fromId": "ap-111",
+      "toId": "ap-194",
+      "curvature": -16.90153937324248,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-143",
+      "fromId": "ap-195",
+      "toId": "ap-143",
+      "curvature": 29.138946117271775,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-144",
+      "fromId": "ap-203",
+      "toId": "ap-195",
+      "curvature": 32.14482675647422,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-145",
+      "fromId": "ap-196",
+      "toId": "ap-46",
+      "curvature": -15.766612413004736,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-146",
+      "fromId": "ap-69",
+      "toId": "ap-127",
+      "curvature": -4.694015937245167,
+      "description": "",
+      "typeId": "type-25"
+    },
+    {
+      "id": "conn-147",
+      "fromId": "ap-127",
+      "toId": "ap-128",
+      "curvature": -4.694015937245167,
+      "description": "",
+      "typeId": "type-25"
+    },
+    {
+      "id": "conn-148",
+      "fromId": "ap-57",
+      "toId": "ap-59",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-149",
+      "fromId": "ap-199",
+      "toId": "ap-18",
+      "curvature": -35.58820176352617,
+      "description": "",
+      "typeId": "type-3"
+    },
+    {
+      "id": "conn-150",
+      "fromId": "ap-201",
+      "toId": "ap-202",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-151",
+      "fromId": "ap-33",
+      "toId": "ap-138",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-152",
+      "fromId": "ap-6",
+      "toId": "ap-140",
+      "curvature": 15.0,
+      "description": "",
+      "typeId": "type-26"
+    },
+    {
+      "id": "conn-153",
+      "fromId": "ap-205",
+      "toId": "ap-207",
+      "curvature": -6.62846416015489,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-154",
+      "fromId": "ap-208",
+      "toId": "ap-205",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-27"
+    },
+    {
+      "id": "conn-155",
+      "fromId": "ap-209",
+      "toId": "ap-210",
+      "curvature": 3.356774006531861,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-156",
+      "fromId": "ap-87",
+      "toId": "ap-234",
+      "curvature": -0.6415066697492574,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-157",
+      "fromId": "ap-214",
+      "toId": "ap-156",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-158",
+      "fromId": "ap-215",
+      "toId": "ap-190",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-23"
+    },
+    {
+      "id": "conn-159",
+      "fromId": "ap-92",
+      "toId": "ap-71",
+      "curvature": -3.852363215603574,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-160",
+      "fromId": "ap-158",
+      "toId": "ap-59",
+      "curvature": 34.116618365252776,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-161",
+      "fromId": "ap-216",
+      "toId": "ap-205",
+      "curvature": -10.960653049495267,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-162",
+      "fromId": "ap-195",
+      "toId": "ap-246",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-163",
+      "fromId": "ap-166",
+      "toId": "ap-196",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-14"
+    },
+    {
+      "id": "conn-164",
+      "fromId": "ap-108",
+      "toId": "ap-217",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-165",
+      "fromId": "ap-217",
+      "toId": "ap-107",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-166",
+      "fromId": "ap-181",
+      "toId": "ap-218",
+      "curvature": -3.0199007779278557,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-167",
+      "fromId": "ap-212",
+      "toId": "ap-219",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-168",
+      "fromId": "ap-56",
+      "toId": "ap-57",
+      "curvature": -4.965371832394595,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-169",
+      "fromId": "ap-80",
+      "toId": "ap-55",
+      "curvature": 29.073906899335682,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-170",
+      "fromId": "ap-35",
+      "toId": "ap-83",
+      "curvature": 211.00577723330397,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-171",
+      "fromId": "ap-220",
+      "toId": "ap-221",
+      "curvature": 3.7870491267244883,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-172",
+      "fromId": "ap-220",
+      "toId": "ap-222",
+      "curvature": -7.364784787916192,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-173",
+      "fromId": "ap-109",
+      "toId": "ap-225",
+      "curvature": 3.7870491267244883,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-174",
+      "fromId": "ap-109",
+      "toId": "ap-224",
+      "curvature": 10.846620152808859,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-175",
+      "fromId": "ap-37",
+      "toId": "ap-138",
+      "curvature": 8.700607550264607,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-176",
+      "fromId": "ap-54",
+      "toId": "ap-151",
+      "curvature": 2.1551342173364105,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-177",
+      "fromId": "ap-199",
+      "toId": "ap-54",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-178",
+      "fromId": "ap-159",
+      "toId": "ap-96",
+      "curvature": -2.5183978676246928,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-179",
+      "fromId": "ap-46",
+      "toId": "ap-103",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-180",
+      "fromId": "ap-103",
+      "toId": "ap-102",
+      "curvature": -4.7180350057330225,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-181",
+      "fromId": "ap-179",
+      "toId": "ap-155",
+      "curvature": 1.2739784927937032,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-182",
+      "fromId": "ap-46",
+      "toId": "ap-179",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-183",
+      "fromId": "ap-46",
+      "toId": "ap-211",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-184",
+      "fromId": "ap-165",
+      "toId": "ap-166",
+      "curvature": -20.51801647667439,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-185",
+      "fromId": "ap-167",
+      "toId": "ap-166",
+      "curvature": 25.774529348767416,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-186",
+      "fromId": "ap-166",
+      "toId": "ap-192",
+      "curvature": -20.929798108847372,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-187",
+      "fromId": "ap-166",
+      "toId": "ap-227",
+      "curvature": -51.04826287825438,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-188",
+      "fromId": "ap-46",
+      "toId": "ap-42",
+      "curvature": -4.714405803209578,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-189",
+      "fromId": "ap-191",
+      "toId": "ap-171",
+      "curvature": 5.466499660536295,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-190",
+      "fromId": "ap-171",
+      "toId": "ap-135",
+      "curvature": 5.466499660536295,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-191",
+      "fromId": "ap-197",
+      "toId": "ap-135",
+      "curvature": -3.815634835936619,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-192",
+      "fromId": "ap-203",
+      "toId": "ap-135",
+      "curvature": 5.466499660536295,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-193",
+      "fromId": "ap-177",
+      "toId": "ap-175",
+      "curvature": 2.7737132173877947,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-194",
+      "fromId": "ap-176",
+      "toId": "ap-175",
+      "curvature": 2.7737132173877947,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-195",
+      "fromId": "ap-223",
+      "toId": "ap-109",
+      "curvature": -14.265844638580031,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-196",
+      "fromId": "ap-85",
+      "toId": "ap-231",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-197",
+      "fromId": "ap-229",
+      "toId": "ap-85",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-198",
+      "fromId": "ap-198",
+      "toId": "ap-229",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-199",
+      "fromId": "ap-229",
+      "toId": "ap-230",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-200",
+      "fromId": "ap-91",
+      "toId": "ap-198",
+      "curvature": -7.4449221237182375,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-201",
+      "fromId": "ap-65",
+      "toId": "ap-66",
+      "curvature": -7.4449221237182375,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-202",
+      "fromId": "ap-93",
+      "toId": "ap-67",
+      "curvature": -7.4449221237182375,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-203",
+      "fromId": "ap-16",
+      "toId": "ap-67",
+      "curvature": -1.9529884673361217,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-204",
+      "fromId": "ap-49",
+      "toId": "ap-48",
+      "curvature": -2.508406412567523,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-205",
+      "fromId": "ap-90",
+      "toId": "ap-66",
+      "curvature": -7.4449221237182375,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-206",
+      "fromId": "ap-70",
+      "toId": "ap-69",
+      "curvature": -20.467517528053744,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-207",
+      "fromId": "ap-120",
+      "toId": "ap-111",
+      "curvature": 59.14616501668195,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-208",
+      "fromId": "ap-67",
+      "toId": "ap-119",
+      "curvature": -18.61380776169709,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-209",
+      "fromId": "ap-232",
+      "toId": "ap-111",
+      "curvature": 1.334556876437794,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-210",
+      "fromId": "ap-66",
+      "toId": "ap-132",
+      "curvature": -12.044842568396902,
+      "description": "",
+      "typeId": "type-16"
+    },
+    {
+      "id": "conn-211",
+      "fromId": "ap-112",
+      "toId": "ap-133",
+      "curvature": 1.3345568764375695,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-212",
+      "fromId": "ap-23",
+      "toId": "ap-228",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-19"
+    },
+    {
+      "id": "conn-213",
+      "fromId": "ap-23",
+      "toId": "ap-228",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-28"
+    },
+    {
+      "id": "conn-214",
+      "fromId": "ap-55",
+      "toId": "ap-18",
+      "curvature": 13.245237499155431,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-215",
+      "fromId": "ap-59",
+      "toId": "ap-149",
+      "curvature": -4.965371832394595,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-216",
+      "fromId": "ap-59",
+      "toId": "ap-157",
+      "curvature": -4.965371832394595,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-217",
+      "fromId": "ap-233",
+      "toId": "ap-158",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-218",
+      "fromId": "ap-126",
+      "toId": "ap-18",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-219",
+      "fromId": "ap-99",
+      "toId": "ap-98",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-220",
+      "fromId": "ap-52",
+      "toId": "ap-47",
+      "curvature": -64.7769953603966,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-221",
+      "fromId": "ap-187",
+      "toId": "ap-184",
+      "curvature": 11.326056768416038,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-222",
+      "fromId": "ap-183",
+      "toId": "ap-187",
+      "curvature": -1.018911294322201,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-223",
+      "fromId": "ap-47",
+      "toId": "ap-186",
+      "curvature": -22.606188223700073,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-224",
+      "fromId": "ap-166",
+      "toId": "ap-26",
+      "curvature": 15.062276217842868,
+      "description": "",
+      "typeId": "type-6"
+    },
+    {
+      "id": "conn-225",
+      "fromId": "ap-138",
+      "toId": "ap-206",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-226",
+      "fromId": "ap-140",
+      "toId": "ap-138",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-227",
+      "fromId": "ap-204",
+      "toId": "ap-235",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-228",
+      "fromId": "ap-235",
+      "toId": "ap-205",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-229",
+      "fromId": "ap-244",
+      "toId": "ap-230",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-230",
+      "fromId": "ap-237",
+      "toId": "ap-88",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-231",
+      "fromId": "ap-201",
+      "toId": "ap-238",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-232",
+      "fromId": "ap-182",
+      "toId": "ap-190",
+      "curvature": -17.73589537906789,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-233",
+      "fromId": "ap-188",
+      "toId": "ap-239",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-23"
+    },
+    {
+      "id": "conn-234",
+      "fromId": "ap-159",
+      "toId": "ap-160",
+      "curvature": -1.5863318583534767,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-235",
+      "fromId": "ap-26",
+      "toId": "ap-241",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-236",
+      "fromId": "ap-240",
+      "toId": "ap-242",
+      "curvature": -10.925717233096396,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-237",
+      "fromId": "ap-229",
+      "toId": "ap-278",
+      "curvature": -6.889953760983014,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-238",
+      "fromId": "ap-243",
+      "toId": "ap-244",
+      "curvature": -3.960916540365659,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-239",
+      "fromId": "ap-44",
+      "toId": "ap-170",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-240",
+      "fromId": "ap-87",
+      "toId": "ap-180",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-241",
+      "fromId": "ap-201",
+      "toId": "ap-245",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-242",
+      "fromId": "ap-209",
+      "toId": "ap-246",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-243",
+      "fromId": "ap-247",
+      "toId": "ap-246",
+      "curvature": 3.5283565605183727,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-244",
+      "fromId": "ap-104",
+      "toId": "ap-24",
+      "curvature": 44.42981319541152,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-245",
+      "fromId": "ap-31",
+      "toId": "ap-40",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-246",
+      "fromId": "ap-253",
+      "toId": "ap-248",
+      "curvature": 15.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-247",
+      "fromId": "ap-253",
+      "toId": "ap-249",
+      "curvature": -8.243362870837249,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-248",
+      "fromId": "ap-252",
+      "toId": "ap-251",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-249",
+      "fromId": "ap-69",
+      "toId": "ap-111",
+      "curvature": 39.931175978788445,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-250",
+      "fromId": "ap-70",
+      "toId": "ap-232",
+      "curvature": -9.178460043522211,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-251",
+      "fromId": "ap-111",
+      "toId": "ap-120",
+      "curvature": -74.61665731553718,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-252",
+      "fromId": "ap-78",
+      "toId": "ap-57",
+      "curvature": 23.160254501055547,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-253",
+      "fromId": "ap-87",
+      "toId": "ap-89",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-7"
+    },
+    {
+      "id": "conn-254",
+      "fromId": "ap-89",
+      "toId": "ap-52",
+      "curvature": -88.5901058589078,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-255",
+      "fromId": "ap-48",
+      "toId": "ap-254",
+      "curvature": -7.4449221237182375,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-256",
+      "fromId": "ap-254",
+      "toId": "ap-255",
+      "curvature": -0.5681312833891048,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-257",
+      "fromId": "ap-255",
+      "toId": "ap-199",
+      "curvature": -137.82576895799468,
+      "description": "",
+      "typeId": "type-5"
+    },
+    {
+      "id": "conn-258",
+      "fromId": "ap-47",
+      "toId": "ap-43",
+      "curvature": 24.213328848115196,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-259",
+      "fromId": "ap-47",
+      "toId": "ap-98",
+      "curvature": -22.41355764380429,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-260",
+      "fromId": "ap-47",
+      "toId": "ap-34",
+      "curvature": 5.75634360782576,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-261",
+      "fromId": "ap-165",
+      "toId": "ap-227",
+      "curvature": 78.3586462939514,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-262",
+      "fromId": "ap-228",
+      "toId": "ap-166",
+      "curvature": -34.46125220235613,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-263",
+      "fromId": "ap-51",
+      "toId": "ap-256",
+      "curvature": -2.6827080596023727,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-264",
+      "fromId": "ap-257",
+      "toId": "ap-51",
+      "curvature": -199.6785923406493,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-265",
+      "fromId": "ap-114",
+      "toId": "ap-164",
+      "curvature": -3.36841635659448,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-266",
+      "fromId": "ap-164",
+      "toId": "ap-128",
+      "curvature": 0.8695959908720328,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-267",
+      "fromId": "ap-210",
+      "toId": "ap-258",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-268",
+      "fromId": "ap-112",
+      "toId": "ap-258",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-269",
+      "fromId": "ap-150",
+      "toId": "ap-28",
+      "curvature": 4.305030963210682,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-270",
+      "fromId": "ap-18",
+      "toId": "ap-88",
+      "curvature": 2.8424697880299132,
+      "description": "",
+      "typeId": "type-1"
+    },
+    {
+      "id": "conn-271",
+      "fromId": "ap-138",
+      "toId": "ap-124",
+      "curvature": -46.266683880528625,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-272",
+      "fromId": "ap-123",
+      "toId": "ap-87",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-273",
+      "fromId": "ap-57",
+      "toId": "ap-79",
+      "curvature": -0.21557465714637958,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-274",
+      "fromId": "ap-260",
+      "toId": "ap-261",
+      "curvature": -3.1384445130095644,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-275",
+      "fromId": "ap-18",
+      "toId": "ap-260",
+      "curvature": -49.64956304842992,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-276",
+      "fromId": "ap-264",
+      "toId": "ap-79",
+      "curvature": -3.1384445130095644,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-277",
+      "fromId": "ap-262",
+      "toId": "ap-260",
+      "curvature": -3.1384445130095644,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-278",
+      "fromId": "ap-263",
+      "toId": "ap-260",
+      "curvature": 11.242063058029313,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-279",
+      "fromId": "ap-262",
+      "toId": "ap-79",
+      "curvature": -3.1384445130095644,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-280",
+      "fromId": "ap-28",
+      "toId": "ap-79",
+      "curvature": -57.40530375634883,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-281",
+      "fromId": "ap-265",
+      "toId": "ap-263",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-21"
+    },
+    {
+      "id": "conn-282",
+      "fromId": "ap-56",
+      "toId": "ap-28",
+      "curvature": 2.001159564890839,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-283",
+      "fromId": "ap-266",
+      "toId": "ap-262",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-21"
+    },
+    {
+      "id": "conn-284",
+      "fromId": "ap-55",
+      "toId": "ap-57",
+      "curvature": 13.23959738472572,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-285",
+      "fromId": "ap-201",
+      "toId": "ap-60",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-11"
+    },
+    {
+      "id": "conn-286",
+      "fromId": "ap-100",
+      "toId": "ap-98",
+      "curvature": 5.75634360782576,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-287",
+      "fromId": "ap-47",
+      "toId": "ap-97",
+      "curvature": -160.13320651523355,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-288",
+      "fromId": "ap-268",
+      "toId": "ap-53",
+      "curvature": 5.75634360782576,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-289",
+      "fromId": "ap-79",
+      "toId": "ap-112",
+      "curvature": 26.726377719324645,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-290",
+      "fromId": "ap-45",
+      "toId": "ap-74",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-291",
+      "fromId": "ap-190",
+      "toId": "ap-188",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-23"
+    },
+    {
+      "id": "conn-292",
+      "fromId": "ap-88",
+      "toId": "ap-77",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-1"
+    },
+    {
+      "id": "conn-293",
+      "fromId": "ap-77",
+      "toId": "ap-201",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-1"
+    },
+    {
+      "id": "conn-294",
+      "fromId": "ap-58",
+      "toId": "ap-158",
+      "curvature": 2.001159564890839,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-295",
+      "fromId": "ap-54",
+      "toId": "ap-270",
+      "curvature": -21.686821191145043,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-296",
+      "fromId": "ap-270",
+      "toId": "ap-218",
+      "curvature": 5.756166077378939,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-297",
+      "fromId": "ap-155",
+      "toId": "ap-271",
+      "curvature": 1.2739784927937032,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-298",
+      "fromId": "ap-181",
+      "toId": "ap-47",
+      "curvature": -1.6568372952322126,
+      "description": "",
+      "typeId": "type-4"
+    },
+    {
+      "id": "conn-299",
+      "fromId": "ap-124",
+      "toId": "ap-272",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-300",
+      "fromId": "ap-273",
+      "toId": "ap-24",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-301",
+      "fromId": "ap-274",
+      "toId": "ap-24",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-302",
+      "fromId": "ap-138",
+      "toId": "ap-24",
+      "curvature": 56.27300499128548,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-303",
+      "fromId": "ap-22",
+      "toId": "ap-112",
+      "curvature": 60.52186036761767,
+      "description": "",
+      "typeId": "type-18"
+    },
+    {
+      "id": "conn-304",
+      "fromId": "ap-132",
+      "toId": "ap-128",
+      "curvature": -4.694015937245167,
+      "description": "",
+      "typeId": "type-1"
+    },
+    {
+      "id": "conn-305",
+      "fromId": "ap-244",
+      "toId": "ap-85",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-306",
+      "fromId": "ap-62",
+      "toId": "ap-85",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-307",
+      "fromId": "ap-40",
+      "toId": "ap-33",
+      "curvature": 7.997008359144963,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-308",
+      "fromId": "ap-35",
+      "toId": "ap-33",
+      "curvature": -10.585976578568005,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-309",
+      "fromId": "ap-216",
+      "toId": "ap-33",
+      "curvature": -267.37415850423304,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-310",
+      "fromId": "ap-82",
+      "toId": "ap-83",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-311",
+      "fromId": "ap-35",
+      "toId": "ap-82",
+      "curvature": 47.37743241299391,
+      "description": "",
+      "typeId": "type-9"
+    },
+    {
+      "id": "conn-312",
+      "fromId": "ap-78",
+      "toId": "ap-59",
+      "curvature": -58.69891387706243,
+      "description": "",
+      "typeId": "type-8"
+    },
+    {
+      "id": "conn-313",
+      "fromId": "ap-135",
+      "toId": "ap-267",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-21"
+    },
+    {
+      "id": "conn-314",
+      "fromId": "ap-82",
+      "toId": "ap-279",
+      "curvature": -1.3295266620722435,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-315",
+      "fromId": "ap-83",
+      "toId": "ap-104",
+      "curvature": 12.955900032090103,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-316",
+      "fromId": "ap-90",
+      "toId": "ap-64",
+      "curvature": -7.4449221237182375,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-317",
+      "fromId": "ap-47",
+      "toId": "ap-18",
+      "curvature": 0.0,
+      "description": "",
+      "typeId": "type-16"
+    },
+    {
+      "id": "conn-318",
+      "fromId": "ap-109",
+      "toId": "ap-120",
+      "curvature": 23.771015034221243,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-319",
+      "fromId": "ap-109",
+      "toId": "ap-226",
+      "curvature": -1.8851996780557632,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-320",
+      "fromId": "ap-109",
+      "toId": "ap-280",
+      "curvature": -1.8851996780557632,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-321",
+      "fromId": "ap-106",
+      "toId": "ap-212",
+      "curvature": 32.249155645542956,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-322",
+      "fromId": "ap-106",
+      "toId": "ap-281",
+      "curvature": -0.06937059871887398,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-323",
+      "fromId": "ap-109",
+      "toId": "ap-281",
+      "curvature": 57.630480901798656,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-324",
+      "fromId": "ap-37",
+      "toId": "ap-253",
+      "curvature": 15.000000000000043,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-325",
+      "fromId": "ap-81",
+      "toId": "ap-85",
+      "curvature": -11.422895288830283,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-326",
+      "fromId": "ap-170",
+      "toId": "ap-81",
+      "curvature": -11.422895288830283,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-327",
+      "fromId": "ap-128",
+      "toId": "ap-131",
+      "curvature": 0.8695959908720328,
+      "description": "",
+      "typeId": "type-2"
+    },
+    {
+      "id": "conn-328",
+      "fromId": "ap-104",
+      "toId": "ap-22",
+      "curvature": 147.29678094264173,
+      "description": "",
+      "typeId": "type-2"
+    }
+  ]
+}
