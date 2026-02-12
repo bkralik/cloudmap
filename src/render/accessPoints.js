@@ -42,7 +42,7 @@ export function createAccessPointsRenderer({
       .append("ellipse")
       .attr("rx", constants.apRx)
       .attr("ry", constants.apRy)
-      .attr("fill", "#5fbf5f")
+      .attr("fill", "#0dfc0d")
       .attr("stroke", "#2f7a2f")
       .attr("stroke-width", 2);
     enter
