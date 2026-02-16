@@ -9,6 +9,7 @@ export function createConnectionTypesPanel({
   typeName,
   typeKind,
   typeSpeed,
+  typeLineStyle,
   typeColor,
   typeColorPick,
   typeColorPicker,
@@ -28,6 +29,7 @@ export function createConnectionTypesPanel({
       typeName.value = "";
       typeKind.value = "wireless";
       typeSpeed.value = "";
+      typeLineStyle.value = "solid";
       typeColor.value = "";
       typeThickness.value = "2";
       typesForm.hidden = true;
@@ -39,6 +41,7 @@ export function createConnectionTypesPanel({
     typeName.value = type.name || "";
     typeKind.value = type.type || "wireless";
     typeSpeed.value = type.speed || "";
+    typeLineStyle.value = type.lineStyle || "solid";
     typeColor.value = type.color || "";
     typeColorPicker.value = normalizeColor(type.color) || "#3f4a3a";
     typeThickness.value = type.thickness ?? 2;
@@ -94,7 +97,7 @@ export function createConnectionTypesPanel({
 
       const meta = document.createElement("div");
       meta.className = "type-row-meta";
-      const metaParts = [type.type, type.speed, type.color, `${type.thickness}px`].filter(
+      const metaParts = [type.type, type.speed, type.lineStyle, type.color, `${type.thickness}px`].filter(
         (value) => value && String(value).trim().length > 0
       );
       meta.textContent = metaParts.join(" - ");
@@ -165,7 +168,7 @@ export function createConnectionTypesPanel({
   });
 
   typeNew.addEventListener("click", () => {
-    setTypeForm({ id: null, name: "", type: "wireless", speed: "", color: "", thickness: 2 });
+    setTypeForm({ id: null, name: "", type: "wireless", speed: "", lineStyle: "solid", color: "", thickness: 2 });
   });
   typeCancel.addEventListener("click", () => setTypeForm(null));
   typeColorPick.addEventListener("click", () => {
@@ -185,6 +188,7 @@ export function createConnectionTypesPanel({
   typeName.addEventListener("input", () => updateTypeValidation());
   typeKind.addEventListener("change", () => updateTypeValidation());
   typeSpeed.addEventListener("input", () => updateTypeValidation());
+  typeLineStyle.addEventListener("change", () => updateTypeValidation());
   typeColor.addEventListener("input", () => updateTypeValidation());
   typeThickness.addEventListener("input", () => updateTypeValidation());
 
@@ -200,6 +204,7 @@ export function createConnectionTypesPanel({
         name,
         type: typeKind.value || "wireless",
         speed: typeSpeed.value.trim(),
+        lineStyle: typeLineStyle.value || "solid",
         color: validation.color || "#3f4a3a",
         thickness: validation.thickness,
       };

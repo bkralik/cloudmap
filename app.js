@@ -46,6 +46,7 @@ import { createFitToView } from "./src/viewport.js";
   const typeName = document.getElementById("typeName");
   const typeKind = document.getElementById("typeKind");
   const typeSpeed = document.getElementById("typeSpeed");
+  const typeLineStyle = document.getElementById("typeLineStyle");
   const typeColor = document.getElementById("typeColor");
   const typeColorPick = document.getElementById("typeColorPick");
   const typeColorPicker = document.getElementById("typeColorPicker");
@@ -89,6 +90,7 @@ import { createFitToView } from "./src/viewport.js";
     typeName,
     typeKind,
     typeSpeed,
+    typeLineStyle,
     typeColor,
     typeColorPick,
     typeColorPicker,

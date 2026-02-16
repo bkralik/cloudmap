@@ -1,6 +1,6 @@
 // Model structure:
 // {
-//   connectionTypes: [{ id, name, type: "wireless"|"metalic"|"fiber", speed, color, thickness }],
+//   connectionTypes: [{ id, name, type: "wireless"|"metalic"|"fiber", speed, lineStyle: "solid"|"dashed", color, thickness }],
 //   accessPoints: [{ id, name, x, y, areaId, routers: [string] }],
 //   areas: [{ id, name, x, y, rx, ry, jitter, pointIds: [apId] }],
 //   connections: [{ id, fromId, toId, curvature, description, typeId }],

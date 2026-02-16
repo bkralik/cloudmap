@@ -32,6 +32,7 @@
         "name": { "type": "string" },
         "type": { "type": "string", "enum": ["wireless", "metalic", "fiber"] },
         "speed": { "type": "string" },
+        "lineStyle": { "type": "string", "enum": ["solid", "dashed"] },
         "color": { "type": "string" },
         "thickness": { "type": "number" }
       }

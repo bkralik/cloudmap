@@ -35,7 +35,7 @@ export function createConnectionsRenderer({
   }
 
   function getConnectionStyle(connection) {
-    const fallback = { color: "#3f4a3a", thickness: 2 };
+    const fallback = { color: "#3f4a3a", thickness: 2, lineStyle: "solid" };
     if (!connection) {
       return fallback;
     }
@@ -46,6 +46,7 @@ export function createConnectionsRenderer({
     return {
       color: type.color || fallback.color,
       thickness: Number(type.thickness) || fallback.thickness,
+      lineStyle: type.lineStyle || fallback.lineStyle,
     };
   }
 
@@ -116,7 +117,12 @@ export function createConnectionsRenderer({
     const merged = selection.merge(enter);
     merged.select("path.connection-line").each(function (d) {
       const style = getConnectionStyle(d);
-      d3.select(this).attr("stroke", style.color).attr("stroke-width", style.thickness);
+      const dashLength = Math.max(4, style.thickness * 2);
+      const dashArray = style.lineStyle === "dashed" ? `${dashLength} ${dashLength}` : null;
+      d3.select(this)
+        .attr("stroke", style.color)
+        .attr("stroke-width", style.thickness)
+        .attr("stroke-dasharray", dashArray);
     });
     updateConnectionPaths();
     selection.exit().remove();
